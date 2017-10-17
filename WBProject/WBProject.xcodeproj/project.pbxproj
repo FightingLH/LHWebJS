@@ -103,6 +103,11 @@
 		795F397D1F789021000046B9 /* WBProject */ = {
 			isa = PBXGroup;
 			children = (
+				799A69EE1F95E11C003F2CB2 /* Common */,
+				799A69ED1F95E0E9003F2CB2 /* Personal */,
+				799A69EC1F95E0E3003F2CB2 /* Service */,
+				799A69EB1F95E0D6003F2CB2 /* Dynamic */,
+				799A69EA1F95E0C9003F2CB2 /* Home */,
 				799A69E71F95DF25003F2CB2 /* Explain */,
 				795F39811F789021000046B9 /* AppDelegate.h */,
 				795F39821F789021000046B9 /* AppDelegate.m */,
@@ -149,6 +154,41 @@
 				799A69E81F95DF4B003F2CB2 /* File-Desc.rtf */,
 			);
 			name = Explain;
+			sourceTree = "<group>";
+		};
+		799A69EA1F95E0C9003F2CB2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		799A69EB1F95E0D6003F2CB2 /* Dynamic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Dynamic;
+			sourceTree = "<group>";
+		};
+		799A69EC1F95E0E3003F2CB2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		799A69ED1F95E0E9003F2CB2 /* Personal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Personal;
+			sourceTree = "<group>";
+		};
+		799A69EE1F95E11C003F2CB2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
