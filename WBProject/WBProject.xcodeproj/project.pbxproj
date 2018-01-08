@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		069EB9E32003A61400D4EEF7 /* WBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 069EB9E22003A61400D4EEF7 /* WBHomeViewController.m */; };
+		069EB9E62003A6AC00D4EEF7 /* WBHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 069EB9E52003A6AC00D4EEF7 /* WBHomeModel.m */; };
 		795F39801F789021000046B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 795F397F1F789021000046B9 /* main.m */; };
 		795F39831F789021000046B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 795F39821F789021000046B9 /* AppDelegate.m */; };
 		795F39861F789021000046B9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 795F39851F789021000046B9 /* ViewController.m */; };
@@ -37,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		069EB9E12003A61400D4EEF7 /* WBHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeViewController.h; sourceTree = "<group>"; };
+		069EB9E22003A61400D4EEF7 /* WBHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBHomeViewController.m; sourceTree = "<group>"; };
+		069EB9E42003A6AC00D4EEF7 /* WBHomeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeModel.h; sourceTree = "<group>"; };
+		069EB9E52003A6AC00D4EEF7 /* WBHomeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBHomeModel.m; sourceTree = "<group>"; };
 		204E529EE6ABFC7267A84332 /* Pods_WBProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WBProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D44021E28B743987E69F576 /* Pods-WBProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WBProject/Pods-WBProject.debug.xcconfig"; sourceTree = "<group>"; };
 		795F397B1F789021000046B9 /* WBProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +91,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		069EB9DF2003A5D700D4EEF7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		069EB9E02003A5E500D4EEF7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				069EB9E42003A6AC00D4EEF7 /* WBHomeModel.h */,
+				069EB9E52003A6AC00D4EEF7 /* WBHomeModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		08C93AC4F8FE3192C8FBA695 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +197,10 @@
 		799A69EA1F95E0C9003F2CB2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				069EB9E02003A5E500D4EEF7 /* Models */,
+				069EB9DF2003A5D700D4EEF7 /* Views */,
+				069EB9E12003A61400D4EEF7 /* WBHomeViewController.h */,
+				069EB9E22003A61400D4EEF7 /* WBHomeViewController.m */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -403,6 +429,8 @@
 			files = (
 				795F39861F789021000046B9 /* ViewController.m in Sources */,
 				795F39831F789021000046B9 /* AppDelegate.m in Sources */,
+				069EB9E62003A6AC00D4EEF7 /* WBHomeModel.m in Sources */,
+				069EB9E32003A61400D4EEF7 /* WBHomeViewController.m in Sources */,
 				795F39801F789021000046B9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
