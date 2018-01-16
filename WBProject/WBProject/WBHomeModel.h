@@ -14,8 +14,12 @@
 @end
 
 @interface WBHomeCardsModel:NSObject
+@property  (nonatomic, copy)    NSString       *Id;
 @property  (nonatomic, copy)    NSString       *title;
 @property  (nonatomic, assign)  NSInteger      level;
+
+#pragma mark -transform
+@property  (nonatomic, copy)    NSString       *transform_title;
 @end
 
 @interface WBHomeModel : NSObject

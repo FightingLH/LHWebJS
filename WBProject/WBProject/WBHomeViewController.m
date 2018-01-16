@@ -20,8 +20,8 @@
     // Do any additional setup after loading the view.
     self.title = @"home";
     
-    WBHomeModel *model =[WBHomeModel yy_modelWithDictionary:@{@"name":@(13),@"age":@"nv",@"sex":@"x",@"cards":@{@"title":@"标题"}}];
-    NSLog(@"%@---%@---%@--%@",model.name,@(model.age),@(model.sex),model.cards.title);
+    WBHomeModel *model =[WBHomeModel yy_modelWithDictionary:@{@"name":@(13),@"age":@"nv",@"sex":@"x",@"cards":@{@"title":@"标题",@"id":@"1"},@"tickets":@[@{@"title":@"array",@"level":@"2"},@{@"title":@"array",@"level":@"2"},@{}]}];
+    NSLog(@"%@---%@---%@--%@--%@--%@",model.name,@(model.age),@(model.sex),model.cards.title,model.cards.Id,model.tickets);
 }
 
 - (void)didReceiveMemoryWarning {

@@ -14,14 +14,25 @@
 
 
 @implementation WBHomeCardsModel
++ (NSDictionary *)modelCustomPropertyMapper {
+    return @{@"Id"  : @"id"};
+}
 
+- (NSString *)transform_title
+{
+    return self.title;
+}
 @end
 
 @implementation WBHomeModel
 
 + (NSDictionary *)modelContainerPropertyGenericClass {
-    return @{@"cards":[WBHomeCardsModel class]
+    return @{
+             @"cards":@"WBHomeCardsModel",
+             @"tickets" : [WBHomeTicketsModel class],
              };
 }
+
+
 
 @end
