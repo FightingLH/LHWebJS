@@ -8,6 +8,24 @@
 
 #import "WBHomeModel.h"
 
+
+@implementation WBHomeTicketsModel
+
+@end
+
+
+@implementation WBHomeCardsModel
++ (NSDictionary *)modelCustomPropertyMapper {
+    return @{@"Id"  : @"id"};
+}
+
+- (NSString *)transform_title
+{
+    return self.title;
+}
+@end
+
+
 @implementation WBHomeModel
 
 + (NSDictionary *)modelCustomPropertyMapper {
@@ -15,8 +33,14 @@
 }
 
 + (NSDictionary *)modelContainerPropertyGenericClass {
-    return @{@"ad":[WBHomeOneModel class]
+
+    return @{
+             @"cards":@"WBHomeCardsModel",
+             @"tickets" : [WBHomeTicketsModel class],
+
              };
 }
+
+
 
 @end

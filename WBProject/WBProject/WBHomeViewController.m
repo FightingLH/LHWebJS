@@ -20,6 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"home";
+
     AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
     sessionManager.requestSerializer = [AFJSONRequestSerializer serializer];   //请求
     sessionManager.responseSerializer = [AFHTTPResponseSerializer serializer]; //响应
@@ -33,6 +34,9 @@
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
     }];
+
+    WBHomeModel *model =[WBHomeModel yy_modelWithDictionary:@{@"name":@(13),@"age":@"nv",@"sex":@"x",@"cards":@{@"title":@"标题",@"id":@"1"},@"tickets":@[@{@"title":@"array",@"level":@"2"},@{@"title":@"array",@"level":@"2"},@{}]}];
+
 }
 
 - (void)didReceiveMemoryWarning {
