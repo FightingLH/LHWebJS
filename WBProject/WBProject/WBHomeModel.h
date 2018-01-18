@@ -5,23 +5,11 @@
 //  Created by 李欢 on 2018/1/8.
 //  Copyright © 2018年 lihuan. All rights reserved.
 //
-
+//mainModel -下放数据模型包括数据和属性
 #import <Foundation/Foundation.h>
+#import "WBHomeOneModel.h"
 
-@interface WBHomeTicketsModel:NSObject
-@property  (nonatomic, copy)    NSString       *title;
-@property  (nonatomic, assign)  NSInteger      level;
-@end
-
-@interface WBHomeCardsModel:NSObject
-@property  (nonatomic, copy)    NSString       *title;
-@property  (nonatomic, assign)  NSInteger      level;
-@end
 
 @interface WBHomeModel : NSObject
-@property  (nonatomic,  copy)    NSString      *name;
-@property  (nonatomic,  assign)  NSInteger     age;
-@property  (nonatomic,  assign)  BOOL          sex;
-@property  (nonatomic,  strong)  WBHomeCardsModel  *cards;//模型
-@property  (nonatomic,  strong)  NSArray       *tickets;
+@property  (nonatomic, strong)   WBHomeOneModel *ad;
 @end

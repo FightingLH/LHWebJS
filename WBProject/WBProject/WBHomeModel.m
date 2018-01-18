@@ -8,19 +8,14 @@
 
 #import "WBHomeModel.h"
 
-@implementation WBHomeTicketsModel
-
-@end
-
-
-@implementation WBHomeCardsModel
-
-@end
-
 @implementation WBHomeModel
 
++ (NSDictionary *)modelCustomPropertyMapper {
+    return @{};
+}
+
 + (NSDictionary *)modelContainerPropertyGenericClass {
-    return @{@"cards":[WBHomeCardsModel class]
+    return @{@"ad":[WBHomeOneModel class]
              };
 }
 
