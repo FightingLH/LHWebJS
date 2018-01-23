@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		065A7C872010E80500FB3A4F /* WBHomeOneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 065A7C852010E80500FB3A4F /* WBHomeOneCell.m */; };
+		065A7C882010E80500FB3A4F /* WBHomeOneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 065A7C862010E80500FB3A4F /* WBHomeOneCell.xib */; };
+		065A7C8B2010ECE600FB3A4F /* WBHomeOneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 065A7C8A2010ECE600FB3A4F /* WBHomeOneModel.m */; };
 		069EB9E32003A61400D4EEF7 /* WBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 069EB9E22003A61400D4EEF7 /* WBHomeViewController.m */; };
 		069EB9E62003A6AC00D4EEF7 /* WBHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 069EB9E52003A6AC00D4EEF7 /* WBHomeModel.m */; };
 		795F39801F789021000046B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 795F397F1F789021000046B9 /* main.m */; };
@@ -39,6 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		065A7C842010E80500FB3A4F /* WBHomeOneCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeOneCell.h; sourceTree = "<group>"; };
+		065A7C852010E80500FB3A4F /* WBHomeOneCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBHomeOneCell.m; sourceTree = "<group>"; };
+		065A7C862010E80500FB3A4F /* WBHomeOneCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WBHomeOneCell.xib; sourceTree = "<group>"; };
+		065A7C892010ECE600FB3A4F /* WBHomeOneModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeOneModel.h; sourceTree = "<group>"; };
+		065A7C8A2010ECE600FB3A4F /* WBHomeOneModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBHomeOneModel.m; sourceTree = "<group>"; };
 		069EB9E12003A61400D4EEF7 /* WBHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeViewController.h; sourceTree = "<group>"; };
 		069EB9E22003A61400D4EEF7 /* WBHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBHomeViewController.m; sourceTree = "<group>"; };
 		069EB9E42003A6AC00D4EEF7 /* WBHomeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeModel.h; sourceTree = "<group>"; };
@@ -91,9 +99,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		065A7C832010E6DB00FB3A4F /* Business */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Business;
+			sourceTree = "<group>";
+		};
 		069EB9DF2003A5D700D4EEF7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				065A7C842010E80500FB3A4F /* WBHomeOneCell.h */,
+				065A7C852010E80500FB3A4F /* WBHomeOneCell.m */,
+				065A7C862010E80500FB3A4F /* WBHomeOneCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -103,6 +121,8 @@
 			children = (
 				069EB9E42003A6AC00D4EEF7 /* WBHomeModel.h */,
 				069EB9E52003A6AC00D4EEF7 /* WBHomeModel.m */,
+				065A7C892010ECE600FB3A4F /* WBHomeOneModel.h */,
+				065A7C8A2010ECE600FB3A4F /* WBHomeOneModel.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -197,6 +217,7 @@
 		799A69EA1F95E0C9003F2CB2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				065A7C832010E6DB00FB3A4F /* Business */,
 				069EB9E02003A5E500D4EEF7 /* Models */,
 				069EB9DF2003A5D700D4EEF7 /* Views */,
 				069EB9E12003A61400D4EEF7 /* WBHomeViewController.h */,
@@ -353,6 +374,7 @@
 			files = (
 				795F398E1F789021000046B9 /* LaunchScreen.storyboard in Resources */,
 				795F398B1F789021000046B9 /* Assets.xcassets in Resources */,
+				065A7C882010E80500FB3A4F /* WBHomeOneCell.xib in Resources */,
 				795F39891F789021000046B9 /* Main.storyboard in Resources */,
 				799A69E91F95DF4B003F2CB2 /* File-Desc.rtf in Resources */,
 			);
@@ -429,6 +451,8 @@
 			files = (
 				795F39861F789021000046B9 /* ViewController.m in Sources */,
 				795F39831F789021000046B9 /* AppDelegate.m in Sources */,
+				065A7C8B2010ECE600FB3A4F /* WBHomeOneModel.m in Sources */,
+				065A7C872010E80500FB3A4F /* WBHomeOneCell.m in Sources */,
 				069EB9E62003A6AC00D4EEF7 /* WBHomeModel.m in Sources */,
 				069EB9E32003A61400D4EEF7 /* WBHomeViewController.m in Sources */,
 				795F39801F789021000046B9 /* main.m in Sources */,
