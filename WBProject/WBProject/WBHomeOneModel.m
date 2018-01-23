@@ -14,4 +14,33 @@
 
 @implementation WBHomeOneModel
 
+- (BOOL)empty
+{
+    if (!self.serviceModel)
+    {
+        return YES;
+    }
+    return NO;
+}
+
+- (float)height
+{
+    return 50.0f;
+}
+
+- (float)width
+{
+    return 320.0f;
+}
+
+- (NSInteger)location
+{
+    return 2;
+}
+
+- (BOOL)show
+{
+    return YES;
+}
+
 @end

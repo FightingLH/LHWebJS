@@ -7,11 +7,14 @@
 //
 
 #import "WBHomeViewController.h"
-#import "WBHomeModel.h"
-#import <YYModel/YYModel.h>
-#import <AFNetworking/AFNetworking.h>
+#import "WBHomeTableDelegate.h"
+#import "WBHomeTableDataSource.h"
+
+
 @interface WBHomeViewController ()<UITableViewDelegate>
 @property  (nonatomic, strong)  UITableView  *tableView;
+@property  (nonatomic, strong)  WBHomeTableDelegate *homeDelegate;
+@property  (nonatomic, strong)  WBHomeTableDataSource *homeDataSource;
 @end
 
 @implementation WBHomeViewController
@@ -20,24 +23,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"home";
-
-    AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
-    sessionManager.requestSerializer = [AFJSONRequestSerializer serializer];   //请求
-    sessionManager.responseSerializer = [AFHTTPResponseSerializer serializer]; //响应
-    sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html", @"application/json", @"text/json", @"text/plain", nil];
-    [sessionManager GET:@"" parameters:@{} progress:^(NSProgress * _Nonnull downloadProgress) {
-        
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-         NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject options:kNilOptions error:nil];
-        WBHomeModel *mainModel = [WBHomeModel yy_modelWithDictionary:dict[@"data"]];
-        NSLog(@"%@",mainModel.ad);
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
-    }];
+    self.homeDelegate = [[WBHomeTableDelegate alloc]init];
+    self.homeDataSource = [[WBHomeTableDataSource alloc]init];
+    self.homeDataSource.dataList = @[@"1",@"2",@"3"];
+    self.homeDelegate.dataList = @[@"1",@"2",@"3"];
+    [self.view addSubview:self.tableView];
+    self.tableView.delegate = self.homeDelegate;
+    self.tableView.dataSource = self.homeDataSource;
+    
 }
-
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -45,11 +39,11 @@
 }
 
 
+
 - (UITableView *)tableView
 {
     if (!_tableView) {
         _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height) style:UITableViewStylePlain];
-        _tableView.delegate = self;
     }
     return _tableView;
     

@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WBHomeOneCellPresenter.h"
 
 @interface WBHomeOneCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
-@property (weak, nonatomic) IBOutlet UILabel *subTitleLabel;
-
+@property  (nonatomic, weak)   id<WBHomeOneCellPresenter> cellDelegate;
+@property  (nonatomic, strong)  UILabel  *nameLabel;
 @end

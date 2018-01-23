@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		065A7C872010E80500FB3A4F /* WBHomeOneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 065A7C852010E80500FB3A4F /* WBHomeOneCell.m */; };
-		065A7C882010E80500FB3A4F /* WBHomeOneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 065A7C862010E80500FB3A4F /* WBHomeOneCell.xib */; };
 		065A7C8B2010ECE600FB3A4F /* WBHomeOneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 065A7C8A2010ECE600FB3A4F /* WBHomeOneModel.m */; };
 		069EB9E32003A61400D4EEF7 /* WBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 069EB9E22003A61400D4EEF7 /* WBHomeViewController.m */; };
 		069EB9E62003A6AC00D4EEF7 /* WBHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 069EB9E52003A6AC00D4EEF7 /* WBHomeModel.m */; };
@@ -20,6 +19,9 @@
 		795F398E1F789021000046B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 795F398C1F789021000046B9 /* LaunchScreen.storyboard */; };
 		795F39991F789021000046B9 /* WBProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 795F39981F789021000046B9 /* WBProjectTests.m */; };
 		795F39A41F789021000046B9 /* WBProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 795F39A31F789021000046B9 /* WBProjectUITests.m */; };
+		7991EA312016CE3D00438232 /* WBHomeBusiness.m in Sources */ = {isa = PBXBuildFile; fileRef = 7991EA302016CE3D00438232 /* WBHomeBusiness.m */; };
+		7991EA352016D08700438232 /* WBHomeTableDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7991EA342016D08700438232 /* WBHomeTableDelegate.m */; };
+		7991EA382016D09B00438232 /* WBHomeTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7991EA372016D09B00438232 /* WBHomeTableDataSource.m */; };
 		799A69E91F95DF4B003F2CB2 /* File-Desc.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 799A69E81F95DF4B003F2CB2 /* File-Desc.rtf */; };
 		E63B1D4C6833834DC180BC44 /* Pods_WBProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 204E529EE6ABFC7267A84332 /* Pods_WBProject.framework */; };
 /* End PBXBuildFile section */
@@ -44,7 +46,6 @@
 /* Begin PBXFileReference section */
 		065A7C842010E80500FB3A4F /* WBHomeOneCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeOneCell.h; sourceTree = "<group>"; };
 		065A7C852010E80500FB3A4F /* WBHomeOneCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBHomeOneCell.m; sourceTree = "<group>"; };
-		065A7C862010E80500FB3A4F /* WBHomeOneCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WBHomeOneCell.xib; sourceTree = "<group>"; };
 		065A7C892010ECE600FB3A4F /* WBHomeOneModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeOneModel.h; sourceTree = "<group>"; };
 		065A7C8A2010ECE600FB3A4F /* WBHomeOneModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBHomeOneModel.m; sourceTree = "<group>"; };
 		069EB9E12003A61400D4EEF7 /* WBHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeViewController.h; sourceTree = "<group>"; };
@@ -69,6 +70,13 @@
 		795F399F1F789021000046B9 /* WBProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WBProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		795F39A31F789021000046B9 /* WBProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBProjectUITests.m; sourceTree = "<group>"; };
 		795F39A51F789021000046B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7991EA2F2016CE3D00438232 /* WBHomeBusiness.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeBusiness.h; sourceTree = "<group>"; };
+		7991EA302016CE3D00438232 /* WBHomeBusiness.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBHomeBusiness.m; sourceTree = "<group>"; };
+		7991EA332016D08700438232 /* WBHomeTableDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeTableDelegate.h; sourceTree = "<group>"; };
+		7991EA342016D08700438232 /* WBHomeTableDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBHomeTableDelegate.m; sourceTree = "<group>"; };
+		7991EA362016D09B00438232 /* WBHomeTableDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeTableDataSource.h; sourceTree = "<group>"; };
+		7991EA372016D09B00438232 /* WBHomeTableDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBHomeTableDataSource.m; sourceTree = "<group>"; };
+		7991EA392016D63E00438232 /* WBHomeOneCellPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeOneCellPresenter.h; sourceTree = "<group>"; };
 		799A69E81F95DF4B003F2CB2 /* File-Desc.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "File-Desc.rtf"; sourceTree = "<group>"; };
 		E320859F74BCCA6DF4DBC147 /* Pods-WBProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-WBProject/Pods-WBProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +110,8 @@
 		065A7C832010E6DB00FB3A4F /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				7991EA2F2016CE3D00438232 /* WBHomeBusiness.h */,
+				7991EA302016CE3D00438232 /* WBHomeBusiness.m */,
 			);
 			name = Business;
 			sourceTree = "<group>";
@@ -109,9 +119,9 @@
 		069EB9DF2003A5D700D4EEF7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7991EA392016D63E00438232 /* WBHomeOneCellPresenter.h */,
 				065A7C842010E80500FB3A4F /* WBHomeOneCell.h */,
 				065A7C852010E80500FB3A4F /* WBHomeOneCell.m */,
-				065A7C862010E80500FB3A4F /* WBHomeOneCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -206,6 +216,13 @@
 			path = WBProjectUITests;
 			sourceTree = "<group>";
 		};
+		7991EA3B2016EFB900438232 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
 		799A69E71F95DF25003F2CB2 /* Explain */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,11 +234,16 @@
 		799A69EA1F95E0C9003F2CB2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				7991EA3B2016EFB900438232 /* Router */,
 				065A7C832010E6DB00FB3A4F /* Business */,
 				069EB9E02003A5E500D4EEF7 /* Models */,
 				069EB9DF2003A5D700D4EEF7 /* Views */,
 				069EB9E12003A61400D4EEF7 /* WBHomeViewController.h */,
 				069EB9E22003A61400D4EEF7 /* WBHomeViewController.m */,
+				7991EA332016D08700438232 /* WBHomeTableDelegate.h */,
+				7991EA342016D08700438232 /* WBHomeTableDelegate.m */,
+				7991EA362016D09B00438232 /* WBHomeTableDataSource.h */,
+				7991EA372016D09B00438232 /* WBHomeTableDataSource.m */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -374,7 +396,6 @@
 			files = (
 				795F398E1F789021000046B9 /* LaunchScreen.storyboard in Resources */,
 				795F398B1F789021000046B9 /* Assets.xcassets in Resources */,
-				065A7C882010E80500FB3A4F /* WBHomeOneCell.xib in Resources */,
 				795F39891F789021000046B9 /* Main.storyboard in Resources */,
 				799A69E91F95DF4B003F2CB2 /* File-Desc.rtf in Resources */,
 			);
@@ -450,9 +471,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				795F39861F789021000046B9 /* ViewController.m in Sources */,
+				7991EA312016CE3D00438232 /* WBHomeBusiness.m in Sources */,
 				795F39831F789021000046B9 /* AppDelegate.m in Sources */,
+				7991EA382016D09B00438232 /* WBHomeTableDataSource.m in Sources */,
 				065A7C8B2010ECE600FB3A4F /* WBHomeOneModel.m in Sources */,
 				065A7C872010E80500FB3A4F /* WBHomeOneCell.m in Sources */,
+				7991EA352016D08700438232 /* WBHomeTableDelegate.m in Sources */,
 				069EB9E62003A6AC00D4EEF7 /* WBHomeModel.m in Sources */,
 				069EB9E32003A61400D4EEF7 /* WBHomeViewController.m in Sources */,
 				795F39801F789021000046B9 /* main.m in Sources */,
