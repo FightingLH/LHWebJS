@@ -10,6 +10,7 @@
 #import "WBHomeTableDelegate.h"
 #import "WBHomeTableDataSource.h"
 #import "WBHomeBusiness.h"
+#import "MJRefresh.h"
 
 @interface WBHomeViewController ()<UITableViewDelegate,WBHomeBusinessPresenter>
 @property  (nonatomic, strong)  UITableView              *tableView;
@@ -29,12 +30,14 @@
     
     self.homeBusiness = [[WBHomeBusiness alloc]init];
     self.homeBusiness.homeBusinessDelegate = self;
-    [self.homeBusiness pullToServiceForData];
+    
     
     [self.view addSubview:self.tableView];
     self.tableView.delegate = self.homeDelegate;
     self.tableView.dataSource = self.homeDataSource;
     
+    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
+    [self.tableView.mj_header beginRefreshing];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -43,12 +46,19 @@
 }
 
 #pragma mark --homeBusinessDelegate
+
+- (void)loadNewData
+{
+    [self.homeBusiness pullToServiceForData];
+}
+
 - (void)requestServiecCallBackModel:(id)model
 {
     NSLog(@"business----->>>%@",model);
     self.homeDataSource.dataList = @[@"1"];
     self.homeDelegate.dataList = @[@"1"];
     [self.tableView reloadData];
+    [self.tableView.mj_header endRefreshing];
 }
 
 - (void)requestServiceCallBackJson:(id)json
@@ -64,6 +74,7 @@
         _tableView.backgroundView.backgroundColor = [UIColor whiteColor];
         _tableView.backgroundColor = [UIColor whiteColor];
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        
     }
     return _tableView;
     

@@ -14,6 +14,19 @@
 
 @implementation WBHomeOneModel
 
+
++ (NSDictionary *)modelCustomPropertyMapper {
+    return @{};
+}
+
++ (NSDictionary *)modelContainerPropertyGenericClass {
+    
+    return @{
+             @"model" : [WBHomeOneDetailModel class],
+             };
+}
+
+
 - (BOOL)empty
 {
     if (!self.viewModel)
