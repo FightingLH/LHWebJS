@@ -9,6 +9,8 @@
 #import "WBHomeTableDataSource.h"
 #import "WBHomeOneCell.h"
 
+static NSString *oneCellId = @"WBHomeOneCell";
+
 @implementation WBHomeTableDataSource
 
 
@@ -19,7 +21,9 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    WBHomeOneCell *cell = [WBHomeOneCell cellWithTableView:tableView];
+    WBHomeOneCell *cell = [WBHomeOneCell cellWithTableView:tableView withIdentifier:oneCellId];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.oneCellDelegate = self;
     return cell;
 }
 

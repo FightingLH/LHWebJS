@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "WBHomeBusinessPresenter.h"
 
-@interface WBHomeBusiness : NSObject
-
+@interface WBHomeBusiness : NSObject<WBHomeBusinessPresenter>
+@property  (nonatomic, weak)   id<WBHomeBusinessPresenter>homeBusinessDelegate;
+- (void)pullToServiceForData;
 @end

@@ -11,21 +11,18 @@
 #import <YYModel/YYModel.h>
 #import <AFNetworking/AFNetworking.h>
 
+
+
 @implementation WBHomeBusiness
-- (void)requestTest
+
+- (void)pullToServiceForData
 {
-    AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
-    sessionManager.requestSerializer = [AFJSONRequestSerializer serializer];   //请求
-    sessionManager.responseSerializer = [AFHTTPResponseSerializer serializer]; //响应
-    sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html", @"application/json", @"text/json", @"text/plain", nil];
-    [sessionManager GET:@"" parameters:@{} progress:^(NSProgress * _Nonnull downloadProgress) {
-        
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject options:kNilOptions error:nil];
-        WBHomeEntity *mainModel = [WBHomeEntity yy_modelWithDictionary:dict[@"data"]];
-        NSLog(@"%@",mainModel.model);
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
-    }];
+    dispatch_time_t delayTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10.0* NSEC_PER_SEC));
+    dispatch_after(delayTime, dispatch_get_main_queue(), ^{
+        if (self.homeBusinessDelegate) {
+            [self.homeBusinessDelegate requestServiceCallBackJson:@"modelJson"];
+            [self.homeBusinessDelegate requestServiecCallBackModel:@"modelModel"];
+        }
+    });
 }
 @end

@@ -74,6 +74,7 @@
 		795F399F1F789021000046B9 /* WBProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WBProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		795F39A31F789021000046B9 /* WBProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBProjectUITests.m; sourceTree = "<group>"; };
 		795F39A51F789021000046B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79786454201988CD00D320B7 /* WBHomeBusinessPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeBusinessPresenter.h; sourceTree = "<group>"; };
 		7991EA2F2016CE3D00438232 /* WBHomeBusiness.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeBusiness.h; sourceTree = "<group>"; };
 		7991EA302016CE3D00438232 /* WBHomeBusiness.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBHomeBusiness.m; sourceTree = "<group>"; };
 		7991EA332016D08700438232 /* WBHomeTableDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeTableDelegate.h; sourceTree = "<group>"; };
@@ -119,6 +120,7 @@
 		065A7C832010E6DB00FB3A4F /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				79786454201988CD00D320B7 /* WBHomeBusinessPresenter.h */,
 				7991EA2F2016CE3D00438232 /* WBHomeBusiness.h */,
 				7991EA302016CE3D00438232 /* WBHomeBusiness.m */,
 			);
@@ -577,7 +579,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -620,7 +622,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

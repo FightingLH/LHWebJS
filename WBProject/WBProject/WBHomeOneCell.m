@@ -20,18 +20,28 @@
 
     // Configure the view for the selected state
 }
-+ (instancetype)cellWithTableView:(UITableView *)tableView
+
++ (instancetype)cellWithTableView:(UITableView *)tableView withIdentifier:(NSString *)identifier
 
 {
-    static  NSString *ID = @"WBHomeOneCell";
-    WBHomeOneCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    WBHomeOneCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (cell == nil) {
         cell = [[NSBundle mainBundle]loadNibNamed:@"WBHomeOneCell" owner:nil options:nil].firstObject;
     }
     return cell;
-    
+}
+
+- (void)setBuyBtton:(UIButton *)buyBtton
+{
     
 }
 
+- (IBAction)buySenderClick:(UIButton *)sender {
+    
+    if (self.oneCellDelegate)
+    {
+        [self.oneCellDelegate clickCellWithCallBack:@"test"];
+    }
+}
 
 @end

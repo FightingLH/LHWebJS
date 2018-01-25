@@ -10,7 +10,12 @@
 
 
 @interface WBHomeOneDetailModel : NSObject
-
+@property  (nonatomic, copy)   NSString   *name;
+@property  (nonatomic, assign) float      score;
+@property  (nonatomic, copy)   NSString   *authorName;
+@property  (nonatomic, copy)   NSString   *actorName;
+@property  (nonatomic, copy)   NSString   *tips;
+@property  (nonatomic, assign) BOOL       showBuy;
 @end
 
 //

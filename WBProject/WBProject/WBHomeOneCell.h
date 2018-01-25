@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WBHomeOneCellPresenter.h"
 
-@interface WBHomeOneCell : UITableViewCell
-+ (instancetype)cellWithTableView:(UITableView *)tableView;
+@interface WBHomeOneCell : UITableViewCell<WBHomeOneCellPresenter>
+@property  (nonatomic, weak)  id<WBHomeOneCellPresenter>oneCellDelegate;
++ (instancetype)cellWithTableView:(UITableView *)tableView withIdentifier:(NSString *)identifier;
+@property (weak, nonatomic) IBOutlet UIButton *buyBtton;
 @end

@@ -9,11 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @protocol WBHomeOneCellPresenter <NSObject>
+@optional
 
-@required
 - (void)clickCellWithCallBack:(id)model;
 
-@optional
 - (void)clickCellWithAction:(id)actionType;
 
 @end
