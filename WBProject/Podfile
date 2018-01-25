@@ -5,4 +5,5 @@ use_frameworks!
 target "WBProject" do
 pod 'YYModel'
 pod 'AFNetworking'
+pod 'MJRefresh'
 end
