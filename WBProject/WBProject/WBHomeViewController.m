@@ -12,6 +12,9 @@
 #import "WBHomeBusiness.h"
 #import "MJRefresh.h"
 
+static NSString *oneCellId = @"WBHomeOneCell";
+static NSString *twoCellId = @"WBHomeTwoCell";
+
 @interface WBHomeViewController ()<UITableViewDelegate,WBHomeBusinessPresenter>
 @property  (nonatomic, strong)  UITableView              *tableView;
 @property  (nonatomic, strong)  WBHomeTableDelegate      *homeDelegate;
@@ -25,14 +28,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"首页";
+    [self.view addSubview:self.tableView];
     self.homeDelegate = [[WBHomeTableDelegate alloc]init];
-    self.homeDataSource = [[WBHomeTableDataSource alloc]init];
-    
+    self.homeDataSource = [[WBHomeTableDataSource alloc]initWithTableView:self.tableView];
     self.homeBusiness = [[WBHomeBusiness alloc]init];
     self.homeBusiness.homeBusinessDelegate = self;
     
     
-    [self.view addSubview:self.tableView];
     self.tableView.delegate = self.homeDelegate;
     self.tableView.dataSource = self.homeDataSource;
     
@@ -55,8 +57,8 @@
 - (void)requestServiecCallBackModel:(id)model
 {
     NSLog(@"business----->>>%@",model);
-    self.homeDataSource.dataList = @[@"1"];
-    self.homeDelegate.dataList = @[@"1"];
+    self.homeDataSource.dataList = @[@[@{@"cellId":oneCellId}],@[@{@"cellId":twoCellId}]];
+    self.homeDelegate.dataList = @[@[@{@"cellId":oneCellId}],@[@{@"cellId":twoCellId}]];
     [self.tableView reloadData];
     [self.tableView.mj_header endRefreshing];
 }

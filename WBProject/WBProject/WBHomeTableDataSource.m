@@ -8,22 +8,34 @@
 
 #import "WBHomeTableDataSource.h"
 #import "WBHomeOneCell.h"
-
-static NSString *oneCellId = @"WBHomeOneCell";
+#import "WBHomeTwoCell.h"
 
 @implementation WBHomeTableDataSource
 
+- (instancetype)initWithTableView:(UITableView *)tableView
+{
+    if (self == [super init]) {
+        [tableView registerNib:[UINib nibWithNibName:@"WBHomeOneCell" bundle:nil] forCellReuseIdentifier:@"WBHomeOneCell"];
+         [tableView registerNib:[UINib nibWithNibName:@"WBHomeTwoCell" bundle:nil] forCellReuseIdentifier:@"WBHomeTwoCell"];
+    }
+    return self;
+}
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return _dataList.count;
 }
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [_dataList[section] count];
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    WBHomeOneCell *cell = [WBHomeOneCell cellWithTableView:tableView withIdentifier:oneCellId];
+    WBHomeCommonCell *cell = [tableView dequeueReusableCellWithIdentifier:_dataList[indexPath.section][indexPath.row][@"cellId"] forIndexPath:indexPath];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    cell.oneCellDelegate = self;
+    cell.cellDelegate = self;
     return cell;
 }
 

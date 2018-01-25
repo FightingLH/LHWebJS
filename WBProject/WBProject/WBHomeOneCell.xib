@@ -96,22 +96,12 @@
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="STm-t2-ynO">
-                        <rect key="frame" x="0.0" y="149" width="320" height="0.5"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="1" id="THy-A3-Hcr"/>
-                        </constraints>
-                    </view>
                 </subviews>
                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
                     <constraint firstItem="hYz-6f-8Og" firstAttribute="leading" secondItem="tpM-th-OjX" secondAttribute="trailing" constant="10" id="2lb-xw-CmX"/>
                     <constraint firstItem="hUc-x2-uR3" firstAttribute="leading" secondItem="tpM-th-OjX" secondAttribute="trailing" constant="10" id="3sx-AP-h9y"/>
-                    <constraint firstAttribute="trailing" secondItem="STm-t2-ynO" secondAttribute="trailing" id="5B4-IM-lPh"/>
-                    <constraint firstItem="STm-t2-ynO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="739-in-O6t"/>
-                    <constraint firstAttribute="bottom" secondItem="STm-t2-ynO" secondAttribute="bottom" id="75D-xc-WJT"/>
                     <constraint firstItem="hjL-U5-Yz2" firstAttribute="top" secondItem="tpM-th-OjX" secondAttribute="bottom" constant="10" id="Ag3-9g-eOg"/>
                     <constraint firstItem="yJ8-9y-eAg" firstAttribute="leading" secondItem="tpM-th-OjX" secondAttribute="trailing" constant="10" id="Qfb-8k-eRS"/>
                     <constraint firstItem="hUc-x2-uR3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="WMI-8P-1t8"/>

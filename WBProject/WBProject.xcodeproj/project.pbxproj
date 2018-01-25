@@ -20,6 +20,9 @@
 		795F398E1F789021000046B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 795F398C1F789021000046B9 /* LaunchScreen.storyboard */; };
 		795F39991F789021000046B9 /* WBProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 795F39981F789021000046B9 /* WBProjectTests.m */; };
 		795F39A41F789021000046B9 /* WBProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 795F39A31F789021000046B9 /* WBProjectUITests.m */; };
+		7978645B2019AB3500D320B7 /* WBHomeTwoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 797864592019AB3500D320B7 /* WBHomeTwoCell.m */; };
+		7978645C2019AB3500D320B7 /* WBHomeTwoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7978645A2019AB3500D320B7 /* WBHomeTwoCell.xib */; };
+		797864602019AB7400D320B7 /* WBHomeCommonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7978645F2019AB7400D320B7 /* WBHomeCommonCell.m */; };
 		7991EA312016CE3D00438232 /* WBHomeBusiness.m in Sources */ = {isa = PBXBuildFile; fileRef = 7991EA302016CE3D00438232 /* WBHomeBusiness.m */; };
 		7991EA352016D08700438232 /* WBHomeTableDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7991EA342016D08700438232 /* WBHomeTableDelegate.m */; };
 		7991EA382016D09B00438232 /* WBHomeTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7991EA372016D09B00438232 /* WBHomeTableDataSource.m */; };
@@ -75,13 +78,18 @@
 		795F39A31F789021000046B9 /* WBProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBProjectUITests.m; sourceTree = "<group>"; };
 		795F39A51F789021000046B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79786454201988CD00D320B7 /* WBHomeBusinessPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeBusinessPresenter.h; sourceTree = "<group>"; };
+		797864582019AB3500D320B7 /* WBHomeTwoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeTwoCell.h; sourceTree = "<group>"; };
+		797864592019AB3500D320B7 /* WBHomeTwoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBHomeTwoCell.m; sourceTree = "<group>"; };
+		7978645A2019AB3500D320B7 /* WBHomeTwoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WBHomeTwoCell.xib; sourceTree = "<group>"; };
+		7978645E2019AB7400D320B7 /* WBHomeCommonCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeCommonCell.h; sourceTree = "<group>"; };
+		7978645F2019AB7400D320B7 /* WBHomeCommonCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBHomeCommonCell.m; sourceTree = "<group>"; };
 		7991EA2F2016CE3D00438232 /* WBHomeBusiness.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeBusiness.h; sourceTree = "<group>"; };
 		7991EA302016CE3D00438232 /* WBHomeBusiness.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBHomeBusiness.m; sourceTree = "<group>"; };
 		7991EA332016D08700438232 /* WBHomeTableDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeTableDelegate.h; sourceTree = "<group>"; };
 		7991EA342016D08700438232 /* WBHomeTableDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBHomeTableDelegate.m; sourceTree = "<group>"; };
 		7991EA362016D09B00438232 /* WBHomeTableDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeTableDataSource.h; sourceTree = "<group>"; };
 		7991EA372016D09B00438232 /* WBHomeTableDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBHomeTableDataSource.m; sourceTree = "<group>"; };
-		7991EA392016D63E00438232 /* WBHomeOneCellPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeOneCellPresenter.h; sourceTree = "<group>"; };
+		7991EA392016D63E00438232 /* WBHomeCommonCellPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeCommonCellPresenter.h; sourceTree = "<group>"; };
 		7991EA3C2017070D00438232 /* WBPersonalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBPersonalViewController.h; sourceTree = "<group>"; };
 		7991EA3D2017070D00438232 /* WBPersonalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBPersonalViewController.m; sourceTree = "<group>"; };
 		7991EA3F2017072C00438232 /* WBDynamicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBDynamicViewController.h; sourceTree = "<group>"; };
@@ -130,10 +138,9 @@
 		069EB9DF2003A5D700D4EEF7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				7991EA392016D63E00438232 /* WBHomeOneCellPresenter.h */,
-				795EA4AB2018809F0022C04B /* WBHomeOneCell.h */,
-				795EA4AC2018809F0022C04B /* WBHomeOneCell.m */,
-				795EA4AD2018809F0022C04B /* WBHomeOneCell.xib */,
+				7978645D2019AB5F00D320B7 /* CommonCell */,
+				797864572019AAB100D320B7 /* TwoView */,
+				797864552019AA6C00D320B7 /* OneView */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -141,10 +148,9 @@
 		069EB9E02003A5E500D4EEF7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				797864562019AA8600D320B7 /* OneModel */,
 				069EB9E42003A6AC00D4EEF7 /* WBHomeEntity.h */,
 				069EB9E52003A6AC00D4EEF7 /* WBHomeEntity.m */,
-				065A7C892010ECE600FB3A4F /* WBHomeOneModel.h */,
-				065A7C8A2010ECE600FB3A4F /* WBHomeOneModel.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -224,6 +230,45 @@
 				795F39A51F789021000046B9 /* Info.plist */,
 			);
 			path = WBProjectUITests;
+			sourceTree = "<group>";
+		};
+		797864552019AA6C00D320B7 /* OneView */ = {
+			isa = PBXGroup;
+			children = (
+				795EA4AB2018809F0022C04B /* WBHomeOneCell.h */,
+				795EA4AC2018809F0022C04B /* WBHomeOneCell.m */,
+				795EA4AD2018809F0022C04B /* WBHomeOneCell.xib */,
+			);
+			name = OneView;
+			sourceTree = "<group>";
+		};
+		797864562019AA8600D320B7 /* OneModel */ = {
+			isa = PBXGroup;
+			children = (
+				065A7C892010ECE600FB3A4F /* WBHomeOneModel.h */,
+				065A7C8A2010ECE600FB3A4F /* WBHomeOneModel.m */,
+			);
+			name = OneModel;
+			sourceTree = "<group>";
+		};
+		797864572019AAB100D320B7 /* TwoView */ = {
+			isa = PBXGroup;
+			children = (
+				797864582019AB3500D320B7 /* WBHomeTwoCell.h */,
+				797864592019AB3500D320B7 /* WBHomeTwoCell.m */,
+				7978645A2019AB3500D320B7 /* WBHomeTwoCell.xib */,
+			);
+			name = TwoView;
+			sourceTree = "<group>";
+		};
+		7978645D2019AB5F00D320B7 /* CommonCell */ = {
+			isa = PBXGroup;
+			children = (
+				7991EA392016D63E00438232 /* WBHomeCommonCellPresenter.h */,
+				7978645E2019AB7400D320B7 /* WBHomeCommonCell.h */,
+				7978645F2019AB7400D320B7 /* WBHomeCommonCell.m */,
+			);
+			name = CommonCell;
 			sourceTree = "<group>";
 		};
 		7991EA3B2016EFB900438232 /* Router */ = {
@@ -398,6 +443,7 @@
 				795F398E1F789021000046B9 /* LaunchScreen.storyboard in Resources */,
 				795F398B1F789021000046B9 /* Assets.xcassets in Resources */,
 				795EA4AF2018809F0022C04B /* WBHomeOneCell.xib in Resources */,
+				7978645C2019AB3500D320B7 /* WBHomeTwoCell.xib in Resources */,
 				795F39891F789021000046B9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,12 +473,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WBProject/Pods-WBProject-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
 			);
@@ -482,6 +530,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7991EA3E2017070D00438232 /* WBPersonalViewController.m in Sources */,
+				797864602019AB7400D320B7 /* WBHomeCommonCell.m in Sources */,
 				795F39861F789021000046B9 /* ViewController.m in Sources */,
 				7991EA312016CE3D00438232 /* WBHomeBusiness.m in Sources */,
 				795F39831F789021000046B9 /* AppDelegate.m in Sources */,
@@ -489,6 +538,7 @@
 				7991EA412017072C00438232 /* WBDynamicViewController.m in Sources */,
 				065A7C8B2010ECE600FB3A4F /* WBHomeOneModel.m in Sources */,
 				7991EA442017074200438232 /* WBServiceViewController.m in Sources */,
+				7978645B2019AB3500D320B7 /* WBHomeTwoCell.m in Sources */,
 				7991EA352016D08700438232 /* WBHomeTableDelegate.m in Sources */,
 				069EB9E62003A6AC00D4EEF7 /* WBHomeEntity.m in Sources */,
 				069EB9E32003A61400D4EEF7 /* WBHomeViewController.m in Sources */,

@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "WBHomeOneCellPresenter.h"
+#import "WBHomeCommonCellPresenter.h"
 
-@interface WBHomeTableDataSource : NSObject<UITableViewDataSource,WBHomeOneCellPresenter>
+@interface WBHomeTableDataSource : NSObject<UITableViewDataSource,WBHomeCommonCellPresenter>
+- (instancetype)initWithTableView:(UITableView *)tableView;
 @property  (nonatomic, copy)  NSArray   *dataList;
 @end

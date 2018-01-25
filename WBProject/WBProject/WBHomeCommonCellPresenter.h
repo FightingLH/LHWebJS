@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol WBHomeOneCellPresenter <NSObject>
+@protocol WBHomeCommonCellPresenter <NSObject>
 @optional
 
 - (void)clickCellWithCallBack:(id)model;

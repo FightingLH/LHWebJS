@@ -6,4 +6,5 @@ target "WBProject" do
 pod 'YYModel'
 pod 'AFNetworking'
 pod 'MJRefresh'
+pod 'IQKeyboardManager'
 end
