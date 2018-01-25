@@ -13,9 +13,7 @@
 #import "MJRefresh.h"
 #import "IQKeyboardManager.h"
 
-static NSString *oneCellId = @"WBHomeOneCell";
-static NSString *twoCellId = @"WBHomeTwoCell";
-static NSString *thrCellId = @"WBHomeThreeCell";
+
 
 @interface WBHomeViewController ()<UITableViewDelegate,WBHomeBusinessPresenter>
 @property  (nonatomic, strong)  UITableView              *tableView;
@@ -77,8 +75,8 @@ static NSString *thrCellId = @"WBHomeThreeCell";
 - (void)requestServiecCallBackModel:(id)model
 {
     NSLog(@"business----->>>%@",model);
-    self.homeDataSource.dataList = @[@[@{@"cellId":oneCellId}],@[@{@"cellId":twoCellId}],@[@{@"cellId":thrCellId},@{@"cellId":thrCellId},@{@"cellId":thrCellId},@{@"cellId":thrCellId}]];
-    self.homeDelegate.dataList = @[@[@{@"cellId":oneCellId}],@[@{@"cellId":twoCellId}],@[@{@"cellId":thrCellId},@{@"cellId":thrCellId},@{@"cellId":thrCellId},@{@"cellId":thrCellId}]];
+    self.homeDataSource.dataList = model;
+    self.homeDelegate.dataList = model;
     [self.tableView reloadData];
     [self.tableView.mj_header endRefreshing];
 }

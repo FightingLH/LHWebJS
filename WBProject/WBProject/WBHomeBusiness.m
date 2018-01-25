@@ -12,6 +12,9 @@
 #import <AFNetworking/AFNetworking.h>
 #import "WBHomeEntity.h"
 
+static NSString *oneCellId = @"WBHomeOneCell";
+static NSString *twoCellId = @"WBHomeTwoCell";
+static NSString *thrCellId = @"WBHomeThreeCell";
 
 @implementation WBHomeBusiness
 
@@ -21,7 +24,7 @@
     dispatch_after(delayTime, dispatch_get_main_queue(), ^{
         if (self.homeBusinessDelegate) {
             [self.homeBusinessDelegate requestServiceCallBackJson:@"modelJson"];
-            [self.homeBusinessDelegate requestServiecCallBackModel:@"modelModel"];
+            [self.homeBusinessDelegate requestServiecCallBackModel:@[@[@{@"cellId":oneCellId}],@[@{@"cellId":twoCellId}],@[@{@"cellId":thrCellId},@{@"cellId":thrCellId},@{@"cellId":thrCellId},@{@"cellId":thrCellId}]]];
         }
     });
 }
