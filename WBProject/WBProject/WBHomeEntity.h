@@ -25,6 +25,6 @@
 @end
 
 
-@interface WBHomeModel : NSObject
-@property  (nonatomic, strong)   WBHomeOneModel *ad;
+@interface WBHomeEntity : NSObject
+@property  (nonatomic, strong)   WBHomeOneModel *model;
 @end

@@ -25,8 +25,8 @@
     self.title = @"home";
     self.homeDelegate = [[WBHomeTableDelegate alloc]init];
     self.homeDataSource = [[WBHomeTableDataSource alloc]init];
-    self.homeDataSource.dataList = @[@"1",@"2",@"3"];
-    self.homeDelegate.dataList = @[@"1",@"2",@"3"];
+    self.homeDataSource.dataList = @[@"1",@"2",@"3",@"1",@"2",@"3",@"1",@"2",@"3"];
+    self.homeDelegate.dataList = @[@"1",@"2",@"3",@"1",@"2",@"3",@"1",@"2",@"3"];
     [self.view addSubview:self.tableView];
     self.tableView.delegate = self.homeDelegate;
     self.tableView.dataSource = self.homeDataSource;

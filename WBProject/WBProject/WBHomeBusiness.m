@@ -7,7 +7,7 @@
 //
 
 #import "WBHomeBusiness.h"
-#import "WBHomeModel.h"
+#import "WBHomeEntity.h"
 #import <YYModel/YYModel.h>
 #import <AFNetworking/AFNetworking.h>
 
@@ -22,8 +22,8 @@
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject options:kNilOptions error:nil];
-        WBHomeModel *mainModel = [WBHomeModel yy_modelWithDictionary:dict[@"data"]];
-        NSLog(@"%@",mainModel.ad);
+        WBHomeEntity *mainModel = [WBHomeEntity yy_modelWithDictionary:dict[@"data"]];
+        NSLog(@"%@",mainModel.model);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
     }];

@@ -16,7 +16,7 @@
 
 - (BOOL)empty
 {
-    if (!self.serviceModel)
+    if (!self.viewModel)
     {
         return YES;
     }

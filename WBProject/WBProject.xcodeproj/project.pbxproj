@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		065A7C872010E80500FB3A4F /* WBHomeOneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 065A7C852010E80500FB3A4F /* WBHomeOneCell.m */; };
 		065A7C8B2010ECE600FB3A4F /* WBHomeOneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 065A7C8A2010ECE600FB3A4F /* WBHomeOneModel.m */; };
 		069EB9E32003A61400D4EEF7 /* WBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 069EB9E22003A61400D4EEF7 /* WBHomeViewController.m */; };
-		069EB9E62003A6AC00D4EEF7 /* WBHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 069EB9E52003A6AC00D4EEF7 /* WBHomeModel.m */; };
+		069EB9E62003A6AC00D4EEF7 /* WBHomeEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 069EB9E52003A6AC00D4EEF7 /* WBHomeEntity.m */; };
+		795EA4AE2018809F0022C04B /* WBHomeOneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 795EA4AC2018809F0022C04B /* WBHomeOneCell.m */; };
+		795EA4AF2018809F0022C04B /* WBHomeOneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 795EA4AD2018809F0022C04B /* WBHomeOneCell.xib */; };
 		795F39801F789021000046B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 795F397F1F789021000046B9 /* main.m */; };
 		795F39831F789021000046B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 795F39821F789021000046B9 /* AppDelegate.m */; };
 		795F39861F789021000046B9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 795F39851F789021000046B9 /* ViewController.m */; };
@@ -46,16 +47,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		065A7C842010E80500FB3A4F /* WBHomeOneCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeOneCell.h; sourceTree = "<group>"; };
-		065A7C852010E80500FB3A4F /* WBHomeOneCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBHomeOneCell.m; sourceTree = "<group>"; };
 		065A7C892010ECE600FB3A4F /* WBHomeOneModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeOneModel.h; sourceTree = "<group>"; };
 		065A7C8A2010ECE600FB3A4F /* WBHomeOneModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBHomeOneModel.m; sourceTree = "<group>"; };
 		069EB9E12003A61400D4EEF7 /* WBHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeViewController.h; sourceTree = "<group>"; };
 		069EB9E22003A61400D4EEF7 /* WBHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBHomeViewController.m; sourceTree = "<group>"; };
-		069EB9E42003A6AC00D4EEF7 /* WBHomeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeModel.h; sourceTree = "<group>"; };
-		069EB9E52003A6AC00D4EEF7 /* WBHomeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBHomeModel.m; sourceTree = "<group>"; };
+		069EB9E42003A6AC00D4EEF7 /* WBHomeEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeEntity.h; sourceTree = "<group>"; };
+		069EB9E52003A6AC00D4EEF7 /* WBHomeEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBHomeEntity.m; sourceTree = "<group>"; };
 		204E529EE6ABFC7267A84332 /* Pods_WBProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WBProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D44021E28B743987E69F576 /* Pods-WBProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WBProject/Pods-WBProject.debug.xcconfig"; sourceTree = "<group>"; };
+		795EA4AB2018809F0022C04B /* WBHomeOneCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeOneCell.h; sourceTree = "<group>"; };
+		795EA4AC2018809F0022C04B /* WBHomeOneCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBHomeOneCell.m; sourceTree = "<group>"; };
+		795EA4AD2018809F0022C04B /* WBHomeOneCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WBHomeOneCell.xib; sourceTree = "<group>"; };
 		795F397B1F789021000046B9 /* WBProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		795F397F1F789021000046B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		795F39811F789021000046B9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -127,8 +129,9 @@
 			isa = PBXGroup;
 			children = (
 				7991EA392016D63E00438232 /* WBHomeOneCellPresenter.h */,
-				065A7C842010E80500FB3A4F /* WBHomeOneCell.h */,
-				065A7C852010E80500FB3A4F /* WBHomeOneCell.m */,
+				795EA4AB2018809F0022C04B /* WBHomeOneCell.h */,
+				795EA4AC2018809F0022C04B /* WBHomeOneCell.m */,
+				795EA4AD2018809F0022C04B /* WBHomeOneCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -136,8 +139,8 @@
 		069EB9E02003A5E500D4EEF7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				069EB9E42003A6AC00D4EEF7 /* WBHomeModel.h */,
-				069EB9E52003A6AC00D4EEF7 /* WBHomeModel.m */,
+				069EB9E42003A6AC00D4EEF7 /* WBHomeEntity.h */,
+				069EB9E52003A6AC00D4EEF7 /* WBHomeEntity.m */,
 				065A7C892010ECE600FB3A4F /* WBHomeOneModel.h */,
 				065A7C8A2010ECE600FB3A4F /* WBHomeOneModel.m */,
 			);
@@ -392,6 +395,7 @@
 			files = (
 				795F398E1F789021000046B9 /* LaunchScreen.storyboard in Resources */,
 				795F398B1F789021000046B9 /* Assets.xcassets in Resources */,
+				795EA4AF2018809F0022C04B /* WBHomeOneCell.xib in Resources */,
 				795F39891F789021000046B9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,12 +476,12 @@
 				7991EA382016D09B00438232 /* WBHomeTableDataSource.m in Sources */,
 				7991EA412017072C00438232 /* WBDynamicViewController.m in Sources */,
 				065A7C8B2010ECE600FB3A4F /* WBHomeOneModel.m in Sources */,
-				065A7C872010E80500FB3A4F /* WBHomeOneCell.m in Sources */,
 				7991EA442017074200438232 /* WBServiceViewController.m in Sources */,
 				7991EA352016D08700438232 /* WBHomeTableDelegate.m in Sources */,
-				069EB9E62003A6AC00D4EEF7 /* WBHomeModel.m in Sources */,
+				069EB9E62003A6AC00D4EEF7 /* WBHomeEntity.m in Sources */,
 				069EB9E32003A61400D4EEF7 /* WBHomeViewController.m in Sources */,
 				795F39801F789021000046B9 /* main.m in Sources */,
+				795EA4AE2018809F0022C04B /* WBHomeOneCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

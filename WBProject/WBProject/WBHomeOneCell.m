@@ -2,7 +2,7 @@
 //  WBHomeOneCell.m
 //  WBProject
 //
-//  Created by 李欢 on 2018/1/18.
+//  Created by feeyo on 2018/1/24.
 //  Copyright © 2018年 lihuan. All rights reserved.
 //
 
@@ -17,37 +17,20 @@
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-}
 
-- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
-{
-    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
-    if (self) {
-        [self.contentView addSubview:self.nameLabel];
-        self.nameLabel.frame = CGRectMake(0, 0, 80, 40);
-        self.nameLabel.userInteractionEnabled = YES;
-        UITapGestureRecognizer *tapGest = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(clickNameGesture)];
-        [self.nameLabel addGestureRecognizer:tapGest];
-    }
-    return self;
+    // Configure the view for the selected state
 }
++ (instancetype)cellWithTableView:(UITableView *)tableView
 
-- (void)clickNameGesture
 {
-    if (self.cellDelegate) {
-        [self.cellDelegate clickCellWithCallBack:@"测试点击"];
+    static  NSString *ID = @"WBHomeOneCell";
+    WBHomeOneCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    if (cell == nil) {
+        cell = [[NSBundle mainBundle]loadNibNamed:@"WBHomeOneCell" owner:nil options:nil].firstObject;
     }
-}
-
-- (UILabel *)nameLabel
-{
-    if (!_nameLabel) {
-        _nameLabel = [[UILabel alloc]init];
-        _nameLabel.text = @"测试";
-        _nameLabel.textColor = [UIColor blackColor];
-        _nameLabel.font = [UIFont systemFontOfSize:17];
-    }
-    return _nameLabel;
+    return cell;
+    
+    
 }
 
 

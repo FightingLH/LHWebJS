@@ -15,8 +15,8 @@
 
 //
 @interface WBHomeOneModel : NSObject
-//原始数据
-@property  (nonatomic, strong)  WBHomeOneDetailModel *serviceModel;
+//viewModel
+@property  (nonatomic, strong)  WBHomeOneDetailModel *viewModel;
 //是否为空
 @property  (nonatomic, assign)  BOOL                 empty;
 //高度

@@ -6,7 +6,7 @@
 //  Copyright © 2018年 lihuan. All rights reserved.
 //
 
-#import "WBHomeModel.h"
+#import "WBHomeEntity.h"
 
 
 @implementation WBHomeTicketsModel
@@ -26,7 +26,7 @@
 @end
 
 
-@implementation WBHomeModel
+@implementation WBHomeEntity
 
 + (NSDictionary *)modelCustomPropertyMapper {
     return @{};
