@@ -7,8 +7,8 @@
 //
 
 #import "WBHomeTableDataSource.h"
-#import "WBHomeOneCell.h"
-#import "WBHomeTwoCell.h"
+#import "WBHomeCommonCell.h"
+
 
 @implementation WBHomeTableDataSource
 
@@ -17,6 +17,7 @@
     if (self == [super init]) {
         [tableView registerNib:[UINib nibWithNibName:@"WBHomeOneCell" bundle:nil] forCellReuseIdentifier:@"WBHomeOneCell"];
          [tableView registerNib:[UINib nibWithNibName:@"WBHomeTwoCell" bundle:nil] forCellReuseIdentifier:@"WBHomeTwoCell"];
+        [tableView registerNib:[UINib nibWithNibName:@"WBHomeThreeCell" bundle:nil] forCellReuseIdentifier:@"WBHomeThreeCell"];
     }
     return self;
 }

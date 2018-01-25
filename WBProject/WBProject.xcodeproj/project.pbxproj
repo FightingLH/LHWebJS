@@ -23,6 +23,9 @@
 		7978645B2019AB3500D320B7 /* WBHomeTwoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 797864592019AB3500D320B7 /* WBHomeTwoCell.m */; };
 		7978645C2019AB3500D320B7 /* WBHomeTwoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7978645A2019AB3500D320B7 /* WBHomeTwoCell.xib */; };
 		797864602019AB7400D320B7 /* WBHomeCommonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7978645F2019AB7400D320B7 /* WBHomeCommonCell.m */; };
+		797864642019BE2100D320B7 /* WBHomeThrHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 797864632019BE2100D320B7 /* WBHomeThrHeaderView.m */; };
+		797864682019BE7000D320B7 /* WBHomeThreeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 797864662019BE7000D320B7 /* WBHomeThreeCell.m */; };
+		797864692019BE7000D320B7 /* WBHomeThreeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 797864672019BE7000D320B7 /* WBHomeThreeCell.xib */; };
 		7991EA312016CE3D00438232 /* WBHomeBusiness.m in Sources */ = {isa = PBXBuildFile; fileRef = 7991EA302016CE3D00438232 /* WBHomeBusiness.m */; };
 		7991EA352016D08700438232 /* WBHomeTableDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7991EA342016D08700438232 /* WBHomeTableDelegate.m */; };
 		7991EA382016D09B00438232 /* WBHomeTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7991EA372016D09B00438232 /* WBHomeTableDataSource.m */; };
@@ -83,6 +86,11 @@
 		7978645A2019AB3500D320B7 /* WBHomeTwoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WBHomeTwoCell.xib; sourceTree = "<group>"; };
 		7978645E2019AB7400D320B7 /* WBHomeCommonCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeCommonCell.h; sourceTree = "<group>"; };
 		7978645F2019AB7400D320B7 /* WBHomeCommonCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBHomeCommonCell.m; sourceTree = "<group>"; };
+		797864622019BE2100D320B7 /* WBHomeThrHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeThrHeaderView.h; sourceTree = "<group>"; };
+		797864632019BE2100D320B7 /* WBHomeThrHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBHomeThrHeaderView.m; sourceTree = "<group>"; };
+		797864652019BE7000D320B7 /* WBHomeThreeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeThreeCell.h; sourceTree = "<group>"; };
+		797864662019BE7000D320B7 /* WBHomeThreeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBHomeThreeCell.m; sourceTree = "<group>"; };
+		797864672019BE7000D320B7 /* WBHomeThreeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WBHomeThreeCell.xib; sourceTree = "<group>"; };
 		7991EA2F2016CE3D00438232 /* WBHomeBusiness.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeBusiness.h; sourceTree = "<group>"; };
 		7991EA302016CE3D00438232 /* WBHomeBusiness.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBHomeBusiness.m; sourceTree = "<group>"; };
 		7991EA332016D08700438232 /* WBHomeTableDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeTableDelegate.h; sourceTree = "<group>"; };
@@ -139,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				7978645D2019AB5F00D320B7 /* CommonCell */,
+				797864612019BDD900D320B7 /* ThrView */,
 				797864572019AAB100D320B7 /* TwoView */,
 				797864552019AA6C00D320B7 /* OneView */,
 			);
@@ -269,6 +278,18 @@
 				7978645F2019AB7400D320B7 /* WBHomeCommonCell.m */,
 			);
 			name = CommonCell;
+			sourceTree = "<group>";
+		};
+		797864612019BDD900D320B7 /* ThrView */ = {
+			isa = PBXGroup;
+			children = (
+				797864622019BE2100D320B7 /* WBHomeThrHeaderView.h */,
+				797864632019BE2100D320B7 /* WBHomeThrHeaderView.m */,
+				797864652019BE7000D320B7 /* WBHomeThreeCell.h */,
+				797864662019BE7000D320B7 /* WBHomeThreeCell.m */,
+				797864672019BE7000D320B7 /* WBHomeThreeCell.xib */,
+			);
+			name = ThrView;
 			sourceTree = "<group>";
 		};
 		7991EA3B2016EFB900438232 /* Router */ = {
@@ -440,6 +461,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				797864692019BE7000D320B7 /* WBHomeThreeCell.xib in Resources */,
 				795F398E1F789021000046B9 /* LaunchScreen.storyboard in Resources */,
 				795F398B1F789021000046B9 /* Assets.xcassets in Resources */,
 				795EA4AF2018809F0022C04B /* WBHomeOneCell.xib in Resources */,
@@ -533,6 +555,7 @@
 				797864602019AB7400D320B7 /* WBHomeCommonCell.m in Sources */,
 				795F39861F789021000046B9 /* ViewController.m in Sources */,
 				7991EA312016CE3D00438232 /* WBHomeBusiness.m in Sources */,
+				797864642019BE2100D320B7 /* WBHomeThrHeaderView.m in Sources */,
 				795F39831F789021000046B9 /* AppDelegate.m in Sources */,
 				7991EA382016D09B00438232 /* WBHomeTableDataSource.m in Sources */,
 				7991EA412017072C00438232 /* WBDynamicViewController.m in Sources */,
@@ -543,6 +566,7 @@
 				069EB9E62003A6AC00D4EEF7 /* WBHomeEntity.m in Sources */,
 				069EB9E32003A61400D4EEF7 /* WBHomeViewController.m in Sources */,
 				795F39801F789021000046B9 /* main.m in Sources */,
+				797864682019BE7000D320B7 /* WBHomeThreeCell.m in Sources */,
 				795EA4AE2018809F0022C04B /* WBHomeOneCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

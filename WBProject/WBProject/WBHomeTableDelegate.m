@@ -7,6 +7,8 @@
 //
 
 #import "WBHomeTableDelegate.h"
+#import "WBHomeThrHeaderView.h"
+
 
 @implementation WBHomeTableDelegate
 
@@ -15,11 +17,18 @@
     if (indexPath.section == 0) {
          return 150;
     }
+    if (indexPath.section == 2) {
+        return 80;
+    }
     return 40;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
+    if(section == 2)
+    {
+        return 60;
+    }
     return 5;
 }
 
@@ -35,5 +44,6 @@
 {
    
 }
+
 
 @end

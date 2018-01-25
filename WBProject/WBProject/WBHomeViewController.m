@@ -11,9 +11,11 @@
 #import "WBHomeTableDataSource.h"
 #import "WBHomeBusiness.h"
 #import "MJRefresh.h"
+#import "IQKeyboardManager.h"
 
 static NSString *oneCellId = @"WBHomeOneCell";
 static NSString *twoCellId = @"WBHomeTwoCell";
+static NSString *thrCellId = @"WBHomeThreeCell";
 
 @interface WBHomeViewController ()<UITableViewDelegate,WBHomeBusinessPresenter>
 @property  (nonatomic, strong)  UITableView              *tableView;
@@ -42,6 +44,21 @@ static NSString *twoCellId = @"WBHomeTwoCell";
     [self.tableView.mj_header beginRefreshing];
 }
 
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [[IQKeyboardManager sharedManager] setEnable:YES];
+    [IQKeyboardManager sharedManager].enableAutoToolbar = YES;
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [[IQKeyboardManager sharedManager] setEnable:NO];
+    [IQKeyboardManager sharedManager].enableAutoToolbar = NO;
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -51,14 +68,17 @@ static NSString *twoCellId = @"WBHomeTwoCell";
 
 - (void)loadNewData
 {
+    self.homeDataSource.dataList = @[];
+    self.homeDelegate.dataList = @[];
+    [self.tableView reloadData];
     [self.homeBusiness pullToServiceForData];
 }
 
 - (void)requestServiecCallBackModel:(id)model
 {
     NSLog(@"business----->>>%@",model);
-    self.homeDataSource.dataList = @[@[@{@"cellId":oneCellId}],@[@{@"cellId":twoCellId}]];
-    self.homeDelegate.dataList = @[@[@{@"cellId":oneCellId}],@[@{@"cellId":twoCellId}]];
+    self.homeDataSource.dataList = @[@[@{@"cellId":oneCellId}],@[@{@"cellId":twoCellId}],@[@{@"cellId":thrCellId},@{@"cellId":thrCellId},@{@"cellId":thrCellId},@{@"cellId":thrCellId}]];
+    self.homeDelegate.dataList = @[@[@{@"cellId":oneCellId}],@[@{@"cellId":twoCellId}],@[@{@"cellId":thrCellId},@{@"cellId":thrCellId},@{@"cellId":thrCellId},@{@"cellId":thrCellId}]];
     [self.tableView reloadData];
     [self.tableView.mj_header endRefreshing];
 }
