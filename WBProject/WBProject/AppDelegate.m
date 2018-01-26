@@ -5,9 +5,10 @@
 //  Created by feeyo on 2017/9/25.
 //  Copyright © 2017年 lihuan. All rights reserved.
 //
-
+//百度 ECNGkSgDzQweZbpKmpwpW3GGx1LoG4l2
 #import "AppDelegate.h"
-#import "WBHomeViewController.h"
+#import "WBTabBarController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[WBHomeViewController new]];
+     self.window.rootViewController = [[WBTabBarController alloc]init];
     return YES;
 }
 

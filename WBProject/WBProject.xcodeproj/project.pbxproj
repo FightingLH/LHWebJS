@@ -21,6 +21,9 @@
 		795F398E1F789021000046B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 795F398C1F789021000046B9 /* LaunchScreen.storyboard */; };
 		795F39991F789021000046B9 /* WBProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 795F39981F789021000046B9 /* WBProjectTests.m */; };
 		795F39A41F789021000046B9 /* WBProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 795F39A31F789021000046B9 /* WBProjectUITests.m */; };
+		79748965201AC55100EAAC5E /* WBEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79748964201AC55100EAAC5E /* WBEventViewController.m */; };
+		79748968201AC57400EAAC5E /* WBAroundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79748967201AC57400EAAC5E /* WBAroundViewController.m */; };
+		7974896B201AC5CA00EAAC5E /* WBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7974896A201AC5CA00EAAC5E /* WBTabBarController.m */; };
 		7978645B2019AB3500D320B7 /* WBHomeTwoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 797864592019AB3500D320B7 /* WBHomeTwoCell.m */; };
 		7978645C2019AB3500D320B7 /* WBHomeTwoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7978645A2019AB3500D320B7 /* WBHomeTwoCell.xib */; };
 		797864602019AB7400D320B7 /* WBHomeCommonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7978645F2019AB7400D320B7 /* WBHomeCommonCell.m */; };
@@ -31,8 +34,6 @@
 		7991EA352016D08700438232 /* WBHomeTableDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7991EA342016D08700438232 /* WBHomeTableDelegate.m */; };
 		7991EA382016D09B00438232 /* WBHomeTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7991EA372016D09B00438232 /* WBHomeTableDataSource.m */; };
 		7991EA3E2017070D00438232 /* WBPersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7991EA3D2017070D00438232 /* WBPersonalViewController.m */; };
-		7991EA412017072C00438232 /* WBDynamicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7991EA402017072C00438232 /* WBDynamicViewController.m */; };
-		7991EA442017074200438232 /* WBServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7991EA432017074200438232 /* WBServiceViewController.m */; };
 		E63B1D4C6833834DC180BC44 /* Pods_WBProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 204E529EE6ABFC7267A84332 /* Pods_WBProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +84,12 @@
 		795F399F1F789021000046B9 /* WBProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WBProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		795F39A31F789021000046B9 /* WBProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBProjectUITests.m; sourceTree = "<group>"; };
 		795F39A51F789021000046B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79748963201AC55100EAAC5E /* WBEventViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBEventViewController.h; sourceTree = "<group>"; };
+		79748964201AC55100EAAC5E /* WBEventViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBEventViewController.m; sourceTree = "<group>"; };
+		79748966201AC57400EAAC5E /* WBAroundViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBAroundViewController.h; sourceTree = "<group>"; };
+		79748967201AC57400EAAC5E /* WBAroundViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBAroundViewController.m; sourceTree = "<group>"; };
+		79748969201AC5CA00EAAC5E /* WBTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBTabBarController.h; sourceTree = "<group>"; };
+		7974896A201AC5CA00EAAC5E /* WBTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBTabBarController.m; sourceTree = "<group>"; };
 		79786454201988CD00D320B7 /* WBHomeBusinessPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeBusinessPresenter.h; sourceTree = "<group>"; };
 		797864582019AB3500D320B7 /* WBHomeTwoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeTwoCell.h; sourceTree = "<group>"; };
 		797864592019AB3500D320B7 /* WBHomeTwoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBHomeTwoCell.m; sourceTree = "<group>"; };
@@ -103,10 +110,6 @@
 		7991EA392016D63E00438232 /* WBHomeCommonCellPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeCommonCellPresenter.h; sourceTree = "<group>"; };
 		7991EA3C2017070D00438232 /* WBPersonalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBPersonalViewController.h; sourceTree = "<group>"; };
 		7991EA3D2017070D00438232 /* WBPersonalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBPersonalViewController.m; sourceTree = "<group>"; };
-		7991EA3F2017072C00438232 /* WBDynamicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBDynamicViewController.h; sourceTree = "<group>"; };
-		7991EA402017072C00438232 /* WBDynamicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBDynamicViewController.m; sourceTree = "<group>"; };
-		7991EA422017074200438232 /* WBServiceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBServiceViewController.h; sourceTree = "<group>"; };
-		7991EA432017074200438232 /* WBServiceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBServiceViewController.m; sourceTree = "<group>"; };
 		E320859F74BCCA6DF4DBC147 /* Pods-WBProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-WBProject/Pods-WBProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -201,12 +204,14 @@
 		795F397D1F789021000046B9 /* WBProject */ = {
 			isa = PBXGroup;
 			children = (
-				799A69ED1F95E0E9003F2CB2 /* Personal */,
-				799A69EC1F95E0E3003F2CB2 /* Service */,
-				799A69EB1F95E0D6003F2CB2 /* Dynamic */,
-				799A69EA1F95E0C9003F2CB2 /* Home */,
+				79748962201AC51600EAAC5E /* AROUND */,
+				79748961201AC50900EAAC5E /* EVENT */,
+				799A69ED1F95E0E9003F2CB2 /* PERSONAL */,
+				799A69EA1F95E0C9003F2CB2 /* HOME */,
 				795F39811F789021000046B9 /* AppDelegate.h */,
 				795F39821F789021000046B9 /* AppDelegate.m */,
+				79748969201AC5CA00EAAC5E /* WBTabBarController.h */,
+				7974896A201AC5CA00EAAC5E /* WBTabBarController.m */,
 				795F39841F789021000046B9 /* ViewController.h */,
 				795F39851F789021000046B9 /* ViewController.m */,
 				795F39871F789021000046B9 /* Main.storyboard */,
@@ -242,6 +247,24 @@
 				795F39A51F789021000046B9 /* Info.plist */,
 			);
 			path = WBProjectUITests;
+			sourceTree = "<group>";
+		};
+		79748961201AC50900EAAC5E /* EVENT */ = {
+			isa = PBXGroup;
+			children = (
+				79748963201AC55100EAAC5E /* WBEventViewController.h */,
+				79748964201AC55100EAAC5E /* WBEventViewController.m */,
+			);
+			name = EVENT;
+			sourceTree = "<group>";
+		};
+		79748962201AC51600EAAC5E /* AROUND */ = {
+			isa = PBXGroup;
+			children = (
+				79748966201AC57400EAAC5E /* WBAroundViewController.h */,
+				79748967201AC57400EAAC5E /* WBAroundViewController.m */,
+			);
+			name = AROUND;
 			sourceTree = "<group>";
 		};
 		797864552019AA6C00D320B7 /* OneView */ = {
@@ -302,7 +325,7 @@
 			name = Router;
 			sourceTree = "<group>";
 		};
-		799A69EA1F95E0C9003F2CB2 /* Home */ = {
+		799A69EA1F95E0C9003F2CB2 /* HOME */ = {
 			isa = PBXGroup;
 			children = (
 				7991EA3B2016EFB900438232 /* Router */,
@@ -318,34 +341,16 @@
 				7991EA362016D09B00438232 /* WBHomeTableDataSource.h */,
 				7991EA372016D09B00438232 /* WBHomeTableDataSource.m */,
 			);
-			name = Home;
+			name = HOME;
 			sourceTree = "<group>";
 		};
-		799A69EB1F95E0D6003F2CB2 /* Dynamic */ = {
-			isa = PBXGroup;
-			children = (
-				7991EA3F2017072C00438232 /* WBDynamicViewController.h */,
-				7991EA402017072C00438232 /* WBDynamicViewController.m */,
-			);
-			name = Dynamic;
-			sourceTree = "<group>";
-		};
-		799A69EC1F95E0E3003F2CB2 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				7991EA422017074200438232 /* WBServiceViewController.h */,
-				7991EA432017074200438232 /* WBServiceViewController.m */,
-			);
-			name = Service;
-			sourceTree = "<group>";
-		};
-		799A69ED1F95E0E9003F2CB2 /* Personal */ = {
+		799A69ED1F95E0E9003F2CB2 /* PERSONAL */ = {
 			isa = PBXGroup;
 			children = (
 				7991EA3C2017070D00438232 /* WBPersonalViewController.h */,
 				7991EA3D2017070D00438232 /* WBPersonalViewController.m */,
 			);
-			name = Personal;
+			name = PERSONAL;
 			sourceTree = "<group>";
 		};
 		9494AFC537F13857121C6742 /* Frameworks */ = {
@@ -428,6 +433,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = C78VJKGV2J;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					795F39931F789021000046B9 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -522,9 +532,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WBProject/Pods-WBProject-resources.sh",
+				"${PODS_ROOT}/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/Resources/mapapi.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -563,17 +576,18 @@
 				797864642019BE2100D320B7 /* WBHomeThrHeaderView.m in Sources */,
 				795F39831F789021000046B9 /* AppDelegate.m in Sources */,
 				7991EA382016D09B00438232 /* WBHomeTableDataSource.m in Sources */,
-				7991EA412017072C00438232 /* WBDynamicViewController.m in Sources */,
 				065A7C8B2010ECE600FB3A4F /* WBHomeOneModel.m in Sources */,
-				7991EA442017074200438232 /* WBServiceViewController.m in Sources */,
 				7978645B2019AB3500D320B7 /* WBHomeTwoCell.m in Sources */,
+				79748965201AC55100EAAC5E /* WBEventViewController.m in Sources */,
 				7991EA352016D08700438232 /* WBHomeTableDelegate.m in Sources */,
 				069EB9E62003A6AC00D4EEF7 /* WBHomeEntity.m in Sources */,
 				069EB9E32003A61400D4EEF7 /* WBHomeViewController.m in Sources */,
 				795F39801F789021000046B9 /* main.m in Sources */,
+				79748968201AC57400EAAC5E /* WBAroundViewController.m in Sources */,
 				797864682019BE7000D320B7 /* WBHomeThreeCell.m in Sources */,
 				06E08886201A2C0700AD5AE3 /* WBHomeViewController+WBHomeCategory.m in Sources */,
 				795EA4AE2018809F0022C04B /* WBHomeOneCell.m in Sources */,
+				7974896B201AC5CA00EAAC5E /* WBTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
