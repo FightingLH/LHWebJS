@@ -19,7 +19,54 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
      self.window.rootViewController = [[WBTabBarController alloc]init];
+    [self addCurrentNotification];
     return YES;
+}
+
+
+- (void)addCurrentNotification
+{
+    
+    if ([[UIApplication sharedApplication] currentUserNotificationSettings].types != UIUserNotificationTypeNone)
+    {
+        //定义本地通知对象
+        UILocalNotification *notification=[[UILocalNotification alloc]init];
+        //设置调用时间
+        notification.fireDate=[NSDate dateWithTimeIntervalSinceNow:10];//立即触发
+        //设置通知属性
+        notification.alertBody=@"HELLO，我是本地通知哦!"; //通知主体
+        notification.applicationIconBadgeNumber=10;//应用程序图标右上角显示的消息数
+        notification.alertAction=@"打开应用"; //待机界面的滑动动作提示
+        notification.soundName=UILocalNotificationDefaultSoundName;//收到通知时播放的声音，默认消息声音
+        notification.userInfo = @{@"name":@"lihuan"};
+        //调用通知
+        [[UIApplication sharedApplication] scheduleLocalNotification:notification];
+    }else
+    {
+          [[UIApplication sharedApplication]registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound  categories:nil]];
+    }
+}
+
+- (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings{
+    
+    if (notificationSettings.types!=UIUserNotificationTypeNone) {
+        //定义本地通知对象
+        UILocalNotification *notification=[[UILocalNotification alloc]init];
+        //设置调用时间
+        notification.fireDate=[NSDate dateWithTimeIntervalSinceNow:10];//立即触发
+        //设置通知属性
+        notification.alertBody=@"HELLO，我是本地通知哦!"; //通知主体
+        notification.applicationIconBadgeNumber=1;//应用程序图标右上角显示的消息数
+        notification.alertAction=@"打开应用"; //待机界面的滑动动作提示
+        notification.soundName=UILocalNotificationDefaultSoundName;//收到通知时播放的声音，默认消息声音
+        //调用通知
+        [[UIApplication sharedApplication] scheduleLocalNotification:notification];
+    }
+}
+
+-(void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification;
+{
+    NSLog(@"%@",notification.userInfo);
 }
 
 
@@ -37,6 +84,7 @@
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+    [[UIApplication sharedApplication]setApplicationIconBadgeNumber:0];
 }
 
 
