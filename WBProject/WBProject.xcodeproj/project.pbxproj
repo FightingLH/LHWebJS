@@ -390,18 +390,18 @@
 		7985CE68201D9A5A0040C174 /* PARTY */ = {
 			isa = PBXGroup;
 			children = (
-				7985CE69201D9A6A0040C174 /* 首页动画 */,
+				7985CE69201D9A6A0040C174 /* eventAnimation */,
 			);
 			name = PARTY;
 			sourceTree = "<group>";
 		};
-		7985CE69201D9A6A0040C174 /* 首页动画 */ = {
+		7985CE69201D9A6A0040C174 /* eventAnimation */ = {
 			isa = PBXGroup;
 			children = (
 				7985CE6B201D9A790040C174 /* JSAnimatedImagesView.h */,
 				7985CE6A201D9A790040C174 /* JSAnimatedImagesView.m */,
 			);
-			name = "首页动画";
+			name = eventAnimation;
 			sourceTree = "<group>";
 		};
 		7985CE76201DA7330040C174 /* View */ = {
