@@ -10,6 +10,5 @@
 
 @protocol WBEventBusinessPresenter <NSObject>
 @optional
-- (void)getEventJSON:(id)json;
 - (void)getEventControllerViewModel:(id)model;
 @end

@@ -89,11 +89,6 @@
      [self.tableView.mj_header endRefreshing];
 }
 
-- (void)getEventJSON:(id)json
-{
-    
-}
-
 #pragma mark -router delegate
 - (void)getFromNextControlWithAction:(NSArray *)model
 {

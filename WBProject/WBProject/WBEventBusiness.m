@@ -20,7 +20,6 @@
     [session GET:@"http://localhost/Login/login.php" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (self.eventDelegate) {
             [self.eventDelegate getEventControllerViewModel:@""];
-            [self.eventDelegate getEventJSON:@""];
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
        
