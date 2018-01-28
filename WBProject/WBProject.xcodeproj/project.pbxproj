@@ -38,6 +38,7 @@
 		7985CE75201D9DEA0040C174 /* WBEventTableDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7985CE74201D9DEA0040C174 /* WBEventTableDelegate.m */; };
 		7985CE79201DA76E0040C174 /* WBEventRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7985CE78201DA76E0040C174 /* WBEventRouter.m */; };
 		7985CE7D201DA9180040C174 /* WBEventAddListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7985CE7C201DA9180040C174 /* WBEventAddListViewController.m */; };
+		7985CE7F201DAE2F0040C174 /* findWork.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7985CE7E201DAE2F0040C174 /* findWork.rtf */; };
 		7991EA312016CE3D00438232 /* WBHomeBusiness.m in Sources */ = {isa = PBXBuildFile; fileRef = 7991EA302016CE3D00438232 /* WBHomeBusiness.m */; };
 		7991EA352016D08700438232 /* WBHomeTableDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7991EA342016D08700438232 /* WBHomeTableDelegate.m */; };
 		7991EA382016D09B00438232 /* WBHomeTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7991EA372016D09B00438232 /* WBHomeTableDataSource.m */; };
@@ -127,6 +128,7 @@
 		7985CE7A201DA7860040C174 /* WBEventRouterPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBEventRouterPresenter.h; sourceTree = "<group>"; };
 		7985CE7B201DA9180040C174 /* WBEventAddListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBEventAddListViewController.h; sourceTree = "<group>"; };
 		7985CE7C201DA9180040C174 /* WBEventAddListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBEventAddListViewController.m; sourceTree = "<group>"; };
+		7985CE7E201DAE2F0040C174 /* findWork.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = findWork.rtf; sourceTree = "<group>"; };
 		7991EA2F2016CE3D00438232 /* WBHomeBusiness.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeBusiness.h; sourceTree = "<group>"; };
 		7991EA302016CE3D00438232 /* WBHomeBusiness.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBHomeBusiness.m; sourceTree = "<group>"; };
 		7991EA332016D08700438232 /* WBHomeTableDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeTableDelegate.h; sourceTree = "<group>"; };
@@ -238,6 +240,7 @@
 				799A69EA1F95E0C9003F2CB2 /* HOME */,
 				795F39811F789021000046B9 /* AppDelegate.h */,
 				795F39821F789021000046B9 /* AppDelegate.m */,
+				7985CE7E201DAE2F0040C174 /* findWork.rtf */,
 				79748969201AC5CA00EAAC5E /* WBTabBarController.h */,
 				7974896A201AC5CA00EAAC5E /* WBTabBarController.m */,
 				795F39841F789021000046B9 /* ViewController.h */,
@@ -573,6 +576,7 @@
 				795F398B1F789021000046B9 /* Assets.xcassets in Resources */,
 				795EA4AF2018809F0022C04B /* WBHomeOneCell.xib in Resources */,
 				7978645C2019AB3500D320B7 /* WBHomeTwoCell.xib in Resources */,
+				7985CE7F201DAE2F0040C174 /* findWork.rtf in Resources */,
 				795F39891F789021000046B9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
