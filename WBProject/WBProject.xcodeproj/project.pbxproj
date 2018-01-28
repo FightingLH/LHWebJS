@@ -32,6 +32,12 @@
 		797864692019BE7000D320B7 /* WBHomeThreeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 797864672019BE7000D320B7 /* WBHomeThreeCell.xib */; };
 		7985CE62201D902E0040C174 /* WBEventBusiness.m in Sources */ = {isa = PBXBuildFile; fileRef = 7985CE61201D902E0040C174 /* WBEventBusiness.m */; };
 		7985CE67201D93250040C174 /* WBCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7985CE66201D93250040C174 /* WBCalendarViewController.m */; };
+		7985CE6C201D9A790040C174 /* JSAnimatedImagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7985CE6A201D9A790040C174 /* JSAnimatedImagesView.m */; };
+		7985CE6F201D9AD20040C174 /* WBEventViewController+WBEventControlCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7985CE6E201D9AD20040C174 /* WBEventViewController+WBEventControlCategory.m */; };
+		7985CE72201D9DD70040C174 /* WBEventTableDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7985CE71201D9DD70040C174 /* WBEventTableDatasource.m */; };
+		7985CE75201D9DEA0040C174 /* WBEventTableDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7985CE74201D9DEA0040C174 /* WBEventTableDelegate.m */; };
+		7985CE79201DA76E0040C174 /* WBEventRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7985CE78201DA76E0040C174 /* WBEventRouter.m */; };
+		7985CE7D201DA9180040C174 /* WBEventAddListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7985CE7C201DA9180040C174 /* WBEventAddListViewController.m */; };
 		7991EA312016CE3D00438232 /* WBHomeBusiness.m in Sources */ = {isa = PBXBuildFile; fileRef = 7991EA302016CE3D00438232 /* WBHomeBusiness.m */; };
 		7991EA352016D08700438232 /* WBHomeTableDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7991EA342016D08700438232 /* WBHomeTableDelegate.m */; };
 		7991EA382016D09B00438232 /* WBHomeTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7991EA372016D09B00438232 /* WBHomeTableDataSource.m */; };
@@ -108,6 +114,19 @@
 		7985CE63201D90530040C174 /* WBEventBusinessPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBEventBusinessPresenter.h; sourceTree = "<group>"; };
 		7985CE65201D93250040C174 /* WBCalendarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBCalendarViewController.h; sourceTree = "<group>"; };
 		7985CE66201D93250040C174 /* WBCalendarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBCalendarViewController.m; sourceTree = "<group>"; };
+		7985CE6A201D9A790040C174 /* JSAnimatedImagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSAnimatedImagesView.m; sourceTree = "<group>"; };
+		7985CE6B201D9A790040C174 /* JSAnimatedImagesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSAnimatedImagesView.h; sourceTree = "<group>"; };
+		7985CE6D201D9AD20040C174 /* WBEventViewController+WBEventControlCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WBEventViewController+WBEventControlCategory.h"; sourceTree = "<group>"; };
+		7985CE6E201D9AD20040C174 /* WBEventViewController+WBEventControlCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WBEventViewController+WBEventControlCategory.m"; sourceTree = "<group>"; };
+		7985CE70201D9DD70040C174 /* WBEventTableDatasource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBEventTableDatasource.h; sourceTree = "<group>"; };
+		7985CE71201D9DD70040C174 /* WBEventTableDatasource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBEventTableDatasource.m; sourceTree = "<group>"; };
+		7985CE73201D9DEA0040C174 /* WBEventTableDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBEventTableDelegate.h; sourceTree = "<group>"; };
+		7985CE74201D9DEA0040C174 /* WBEventTableDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBEventTableDelegate.m; sourceTree = "<group>"; };
+		7985CE77201DA76E0040C174 /* WBEventRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBEventRouter.h; sourceTree = "<group>"; };
+		7985CE78201DA76E0040C174 /* WBEventRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBEventRouter.m; sourceTree = "<group>"; };
+		7985CE7A201DA7860040C174 /* WBEventRouterPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBEventRouterPresenter.h; sourceTree = "<group>"; };
+		7985CE7B201DA9180040C174 /* WBEventAddListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBEventAddListViewController.h; sourceTree = "<group>"; };
+		7985CE7C201DA9180040C174 /* WBEventAddListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBEventAddListViewController.m; sourceTree = "<group>"; };
 		7991EA2F2016CE3D00438232 /* WBHomeBusiness.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeBusiness.h; sourceTree = "<group>"; };
 		7991EA302016CE3D00438232 /* WBHomeBusiness.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBHomeBusiness.m; sourceTree = "<group>"; };
 		7991EA332016D08700438232 /* WBHomeTableDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeTableDelegate.h; sourceTree = "<group>"; };
@@ -211,6 +230,7 @@
 		795F397D1F789021000046B9 /* WBProject */ = {
 			isa = PBXGroup;
 			children = (
+				7985CE68201D9A5A0040C174 /* PARTY */,
 				7985CE64201D92FD0040C174 /* CALANDAR */,
 				79748962201AC51600EAAC5E /* AROUND */,
 				79748961201AC50900EAAC5E /* EVENT */,
@@ -260,10 +280,17 @@
 		79748961201AC50900EAAC5E /* EVENT */ = {
 			isa = PBXGroup;
 			children = (
+				7985CE76201DA7330040C174 /* View */,
 				7985CE5F201D900F0040C174 /* Router */,
 				7985CE5E201D90040040C174 /* Business */,
 				79748963201AC55100EAAC5E /* WBEventViewController.h */,
 				79748964201AC55100EAAC5E /* WBEventViewController.m */,
+				7985CE70201D9DD70040C174 /* WBEventTableDatasource.h */,
+				7985CE71201D9DD70040C174 /* WBEventTableDatasource.m */,
+				7985CE73201D9DEA0040C174 /* WBEventTableDelegate.h */,
+				7985CE74201D9DEA0040C174 /* WBEventTableDelegate.m */,
+				7985CE6D201D9AD20040C174 /* WBEventViewController+WBEventControlCategory.h */,
+				7985CE6E201D9AD20040C174 /* WBEventViewController+WBEventControlCategory.m */,
 			);
 			name = EVENT;
 			sourceTree = "<group>";
@@ -341,6 +368,9 @@
 		7985CE5F201D900F0040C174 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				7985CE7A201DA7860040C174 /* WBEventRouterPresenter.h */,
+				7985CE77201DA76E0040C174 /* WBEventRouter.h */,
+				7985CE78201DA76E0040C174 /* WBEventRouter.m */,
 			);
 			name = Router;
 			sourceTree = "<group>";
@@ -352,6 +382,32 @@
 				7985CE66201D93250040C174 /* WBCalendarViewController.m */,
 			);
 			name = CALANDAR;
+			sourceTree = "<group>";
+		};
+		7985CE68201D9A5A0040C174 /* PARTY */ = {
+			isa = PBXGroup;
+			children = (
+				7985CE69201D9A6A0040C174 /* 首页动画 */,
+			);
+			name = PARTY;
+			sourceTree = "<group>";
+		};
+		7985CE69201D9A6A0040C174 /* 首页动画 */ = {
+			isa = PBXGroup;
+			children = (
+				7985CE6B201D9A790040C174 /* JSAnimatedImagesView.h */,
+				7985CE6A201D9A790040C174 /* JSAnimatedImagesView.m */,
+			);
+			name = "首页动画";
+			sourceTree = "<group>";
+		};
+		7985CE76201DA7330040C174 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7985CE7B201DA9180040C174 /* WBEventAddListViewController.h */,
+				7985CE7C201DA9180040C174 /* WBEventAddListViewController.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		7991EA3B2016EFB900438232 /* Router */ = {
@@ -609,22 +665,28 @@
 				7985CE67201D93250040C174 /* WBCalendarViewController.m in Sources */,
 				797864602019AB7400D320B7 /* WBHomeCommonCell.m in Sources */,
 				795F39861F789021000046B9 /* ViewController.m in Sources */,
+				7985CE7D201DA9180040C174 /* WBEventAddListViewController.m in Sources */,
 				7985CE62201D902E0040C174 /* WBEventBusiness.m in Sources */,
 				7991EA312016CE3D00438232 /* WBHomeBusiness.m in Sources */,
+				7985CE79201DA76E0040C174 /* WBEventRouter.m in Sources */,
 				797864642019BE2100D320B7 /* WBHomeThrHeaderView.m in Sources */,
 				795F39831F789021000046B9 /* AppDelegate.m in Sources */,
 				7991EA382016D09B00438232 /* WBHomeTableDataSource.m in Sources */,
+				7985CE72201D9DD70040C174 /* WBEventTableDatasource.m in Sources */,
+				7985CE6F201D9AD20040C174 /* WBEventViewController+WBEventControlCategory.m in Sources */,
 				065A7C8B2010ECE600FB3A4F /* WBHomeOneModel.m in Sources */,
 				7978645B2019AB3500D320B7 /* WBHomeTwoCell.m in Sources */,
 				79748965201AC55100EAAC5E /* WBEventViewController.m in Sources */,
 				7991EA352016D08700438232 /* WBHomeTableDelegate.m in Sources */,
 				069EB9E62003A6AC00D4EEF7 /* WBHomeEntity.m in Sources */,
+				7985CE75201D9DEA0040C174 /* WBEventTableDelegate.m in Sources */,
 				069EB9E32003A61400D4EEF7 /* WBHomeViewController.m in Sources */,
 				795F39801F789021000046B9 /* main.m in Sources */,
 				79748968201AC57400EAAC5E /* WBAroundViewController.m in Sources */,
 				797864682019BE7000D320B7 /* WBHomeThreeCell.m in Sources */,
 				06E08886201A2C0700AD5AE3 /* WBHomeViewController+WBHomeCategory.m in Sources */,
 				795EA4AE2018809F0022C04B /* WBHomeOneCell.m in Sources */,
+				7985CE6C201D9A790040C174 /* JSAnimatedImagesView.m in Sources */,
 				7974896B201AC5CA00EAAC5E /* WBTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
