@@ -7,17 +7,26 @@
 //
 
 #import "WBEventBusiness.h"
+#import <AFNetworking/AFNetworking.h>
 
 @implementation WBEventBusiness
 - (void)requestService
 {
-    dispatch_time_t delayTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2* NSEC_PER_SEC));
-    dispatch_after(delayTime, dispatch_get_main_queue(), ^{
+    AFHTTPSessionManager *session = [AFHTTPSessionManager manager];
+    
+    session.responseSerializer = [AFJSONResponseSerializer serializer];
+    session.requestSerializer= [AFJSONRequestSerializer serializer];
+    session.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"text/plain",@"text/json", nil];
+    [session GET:@"http://localhost/Login/login.php" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (self.eventDelegate) {
             [self.eventDelegate getEventControllerViewModel:@""];
             [self.eventDelegate getEventJSON:@""];
         }
-    });
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+       
+    }];
+    
+    
 }
 
 

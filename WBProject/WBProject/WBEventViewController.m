@@ -137,7 +137,6 @@
         _tableView.backgroundView.backgroundColor = [UIColor clearColor];
         _tableView.backgroundColor = [UIColor clearColor];
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-        _tableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
     }
     return _tableView;
     
