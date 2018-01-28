@@ -7,8 +7,10 @@
 //
 
 #import "WBEventViewController.h"
+#import "WBEventBusiness.h"
 
-@interface WBEventViewController ()
+@interface WBEventViewController ()<WBEventBusinessPresenter>
+@property  (nonatomic, strong)  WBEventBusiness  *eventBusiness;
 
 @end
 
@@ -16,7 +18,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"事件";
     self.view.backgroundColor = [UIColor whiteColor];
+    self.eventBusiness = [[WBEventBusiness alloc]init];
+    self.eventBusiness.eventDelegate = self;
+}
+
+
+#pragma mark -service delegate
+- (void)getEventControllerViewModel:(id)model
+{
+    
+}
+
+- (void)getEventJSON:(id)json
+{
+    
 }
 
 - (void)didReceiveMemoryWarning {

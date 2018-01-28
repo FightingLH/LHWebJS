@@ -9,6 +9,9 @@
 #import "WBTabBarController.h"
 #import "WBEventViewController.h"
 #import "WBAroundViewController.h"
+#import "WBCalendarViewController.h"
+#import "WBPersonalViewController.h"
+
 
 @interface WBTabBarController ()
 
@@ -25,10 +28,10 @@
 - (void)setupChildControllers{
     
     [self setupChildNavigationControllerWithClass:[UINavigationController class] tabBarImageName:@"" tabBarSelectImageName:@"" rootViewControllerClass: [WBEventViewController class] rootViewControllerTitle:@"事件"];
-    
+    [self setupChildNavigationControllerWithClass:[UINavigationController class] tabBarImageName:@"" tabBarSelectImageName:@"" rootViewControllerClass: [WBCalendarViewController class] rootViewControllerTitle:@"日历"];
     [self setupChildNavigationControllerWithClass:[UINavigationController class] tabBarImageName:@"" tabBarSelectImageName:@"" rootViewControllerClass: [WBAroundViewController class] rootViewControllerTitle:@"周边"];
     
-    
+     [self setupChildNavigationControllerWithClass:[UINavigationController class] tabBarImageName:@"" tabBarSelectImageName:@"" rootViewControllerClass: [WBPersonalViewController class] rootViewControllerTitle:@"我的"];
 }
 
 - (void)setupChildNavigationControllerWithClass:(Class)class tabBarImageName:(NSString *)name tabBarSelectImageName:(NSString *)selectName rootViewControllerClass:(Class)rootViewControllerClass rootViewControllerTitle:(NSString *)title{
