@@ -18,13 +18,13 @@
     session.requestSerializer= [AFJSONRequestSerializer serializer];
     session.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"text/plain",@"text/json", nil];
     [session GET:@"http://localhost/Login/login.php" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        if (self.eventDelegate) {
-            [self.eventDelegate getEventControllerViewModel:@""];
-        }
+       
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
        
     }];
-    
+    if (self.eventDelegate) {
+        [self.eventDelegate getEventControllerViewModel:@""];
+    }
     
 }
 

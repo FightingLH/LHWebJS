@@ -8,6 +8,7 @@
 //百度 ECNGkSgDzQweZbpKmpwpW3GGx1LoG4l2
 #import "AppDelegate.h"
 #import "WBTabBarController.h"
+#import "WBPasswordViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,7 +19,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-     self.window.rootViewController = [[WBTabBarController alloc]init];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self.window makeKeyAndVisible];
+    self.window.rootViewController = [[WBTabBarController alloc]init];
+    [WBPasswordViewController configWithWindow:self.window showRootControl:^(BOOL show) {
+        self.window.rootViewController = [[WBTabBarController alloc]init];
+    }];
     [self addCurrentNotification];
     return YES;
 }
@@ -53,12 +59,11 @@
         //定义本地通知对象
         UILocalNotification *notification=[[UILocalNotification alloc]init];
         //设置调用时间
-        notification.fireDate=[NSDate dateWithTimeIntervalSinceNow:10];//立即触发
-        //设置通知属性
+        notification.fireDate=[NSDate dateWithTimeIntervalSinceNow:10];
         notification.alertBody=@"HELLO，我是本地通知哦!"; //通知主体
-        notification.applicationIconBadgeNumber=1;//应用程序图标右上角显示的消息数
+        notification.applicationIconBadgeNumber=10;//应用程序图标右上角显示的消息数
         notification.alertAction=@"打开应用"; //待机界面的滑动动作提示
-        notification.soundName=UILocalNotificationDefaultSoundName;//收到通知时播放的声音，默认消息声音
+        notification.soundName=UILocalNotificationDefaultSoundName;
         //调用通知
         [[UIApplication sharedApplication] scheduleLocalNotification:notification];
     }
@@ -84,7 +89,6 @@
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
-    [[UIApplication sharedApplication]setApplicationIconBadgeNumber:0];
 }
 
 

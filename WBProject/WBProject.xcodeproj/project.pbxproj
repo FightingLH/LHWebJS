@@ -21,6 +21,9 @@
 		795F398E1F789021000046B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 795F398C1F789021000046B9 /* LaunchScreen.storyboard */; };
 		795F39991F789021000046B9 /* WBProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 795F39981F789021000046B9 /* WBProjectTests.m */; };
 		795F39A41F789021000046B9 /* WBProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 795F39A31F789021000046B9 /* WBProjectUITests.m */; };
+		7963B86B201ECB1C00E460AF /* WBPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7963B86A201ECB1C00E460AF /* WBPasswordViewController.m */; };
+		7963B86E201ECDEA00E460AF /* WBPasswordButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7963B86D201ECDEA00E460AF /* WBPasswordButtonView.m */; };
+		7963B874201F06C300E460AF /* WBPasswordBussiness.m in Sources */ = {isa = PBXBuildFile; fileRef = 7963B873201F06C300E460AF /* WBPasswordBussiness.m */; };
 		79748965201AC55100EAAC5E /* WBEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79748964201AC55100EAAC5E /* WBEventViewController.m */; };
 		79748968201AC57400EAAC5E /* WBAroundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79748967201AC57400EAAC5E /* WBAroundViewController.m */; };
 		7974896B201AC5CA00EAAC5E /* WBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7974896A201AC5CA00EAAC5E /* WBTabBarController.m */; };
@@ -93,6 +96,14 @@
 		795F399F1F789021000046B9 /* WBProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WBProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		795F39A31F789021000046B9 /* WBProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBProjectUITests.m; sourceTree = "<group>"; };
 		795F39A51F789021000046B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7963B869201ECB1C00E460AF /* WBPasswordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBPasswordViewController.h; sourceTree = "<group>"; };
+		7963B86A201ECB1C00E460AF /* WBPasswordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBPasswordViewController.m; sourceTree = "<group>"; };
+		7963B86C201ECDEA00E460AF /* WBPasswordButtonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBPasswordButtonView.h; sourceTree = "<group>"; };
+		7963B86D201ECDEA00E460AF /* WBPasswordButtonView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBPasswordButtonView.m; sourceTree = "<group>"; };
+		7963B870201ECF0E00E460AF /* WBPasswordButtonViewPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBPasswordButtonViewPresenter.h; sourceTree = "<group>"; };
+		7963B872201F06C300E460AF /* WBPasswordBussiness.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBPasswordBussiness.h; sourceTree = "<group>"; };
+		7963B873201F06C300E460AF /* WBPasswordBussiness.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBPasswordBussiness.m; sourceTree = "<group>"; };
+		7963B875201F06EE00E460AF /* WBPasswordBusinessPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBPasswordBusinessPresenter.h; sourceTree = "<group>"; };
 		79748963201AC55100EAAC5E /* WBEventViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBEventViewController.h; sourceTree = "<group>"; };
 		79748964201AC55100EAAC5E /* WBEventViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBEventViewController.m; sourceTree = "<group>"; };
 		79748966201AC57400EAAC5E /* WBAroundViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBAroundViewController.h; sourceTree = "<group>"; };
@@ -232,6 +243,7 @@
 		795F397D1F789021000046B9 /* WBProject */ = {
 			isa = PBXGroup;
 			children = (
+				7963B868201ECAE500E460AF /* PASSWORD */,
 				7985CE68201D9A5A0040C174 /* PARTY */,
 				7985CE64201D92FD0040C174 /* CALANDAR */,
 				79748962201AC51600EAAC5E /* AROUND */,
@@ -278,6 +290,37 @@
 				795F39A51F789021000046B9 /* Info.plist */,
 			);
 			path = WBProjectUITests;
+			sourceTree = "<group>";
+		};
+		7963B868201ECAE500E460AF /* PASSWORD */ = {
+			isa = PBXGroup;
+			children = (
+				7963B871201F06A000E460AF /* Business */,
+				7963B86F201ECDFB00E460AF /* View */,
+				7963B869201ECB1C00E460AF /* WBPasswordViewController.h */,
+				7963B86A201ECB1C00E460AF /* WBPasswordViewController.m */,
+			);
+			name = PASSWORD;
+			sourceTree = "<group>";
+		};
+		7963B86F201ECDFB00E460AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7963B870201ECF0E00E460AF /* WBPasswordButtonViewPresenter.h */,
+				7963B86C201ECDEA00E460AF /* WBPasswordButtonView.h */,
+				7963B86D201ECDEA00E460AF /* WBPasswordButtonView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		7963B871201F06A000E460AF /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				7963B875201F06EE00E460AF /* WBPasswordBusinessPresenter.h */,
+				7963B872201F06C300E460AF /* WBPasswordBussiness.h */,
+				7963B873201F06C300E460AF /* WBPasswordBussiness.m */,
+			);
+			name = Business;
 			sourceTree = "<group>";
 		};
 		79748961201AC50900EAAC5E /* EVENT */ = {
@@ -666,6 +709,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7991EA3E2017070D00438232 /* WBPersonalViewController.m in Sources */,
+				7963B874201F06C300E460AF /* WBPasswordBussiness.m in Sources */,
 				7985CE67201D93250040C174 /* WBCalendarViewController.m in Sources */,
 				797864602019AB7400D320B7 /* WBHomeCommonCell.m in Sources */,
 				795F39861F789021000046B9 /* ViewController.m in Sources */,
@@ -688,7 +732,9 @@
 				795F39801F789021000046B9 /* main.m in Sources */,
 				79748968201AC57400EAAC5E /* WBAroundViewController.m in Sources */,
 				797864682019BE7000D320B7 /* WBHomeThreeCell.m in Sources */,
+				7963B86E201ECDEA00E460AF /* WBPasswordButtonView.m in Sources */,
 				06E08886201A2C0700AD5AE3 /* WBHomeViewController+WBHomeCategory.m in Sources */,
+				7963B86B201ECB1C00E460AF /* WBPasswordViewController.m in Sources */,
 				795EA4AE2018809F0022C04B /* WBHomeOneCell.m in Sources */,
 				7985CE6C201D9A790040C174 /* JSAnimatedImagesView.m in Sources */,
 				7974896B201AC5CA00EAAC5E /* WBTabBarController.m in Sources */,

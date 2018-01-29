@@ -32,6 +32,7 @@
     [super viewDidLoad];
     self.title = @"事件";
     self.view.backgroundColor = [UIColor whiteColor];
+    self.edgesForExtendedLayout = UIRectEdgeNone;
     
     self.animatedImages = [[JSAnimatedImagesView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
     [self.view addSubview:self.animatedImages];
@@ -132,6 +133,8 @@
         _tableView.backgroundView.backgroundColor = [UIColor clearColor];
         _tableView.backgroundColor = [UIColor clearColor];
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+         _tableView.estimatedRowHeight = 100;
+        _tableView.rowHeight = UITableViewAutomaticDimension;
     }
     return _tableView;
     
