@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		065A7C8B2010ECE600FB3A4F /* WBHomeOneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 065A7C8A2010ECE600FB3A4F /* WBHomeOneModel.m */; };
+		065EEAD8201F59870014C199 /* WBEventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 065EEAD7201F59870014C199 /* WBEventTableViewCell.m */; };
 		069EB9E32003A61400D4EEF7 /* WBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 069EB9E22003A61400D4EEF7 /* WBHomeViewController.m */; };
 		069EB9E62003A6AC00D4EEF7 /* WBHomeEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 069EB9E52003A6AC00D4EEF7 /* WBHomeEntity.m */; };
 		06E08886201A2C0700AD5AE3 /* WBHomeViewController+WBHomeCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E08885201A2C0700AD5AE3 /* WBHomeViewController+WBHomeCategory.m */; };
@@ -69,6 +70,8 @@
 /* Begin PBXFileReference section */
 		065A7C892010ECE600FB3A4F /* WBHomeOneModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeOneModel.h; sourceTree = "<group>"; };
 		065A7C8A2010ECE600FB3A4F /* WBHomeOneModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBHomeOneModel.m; sourceTree = "<group>"; };
+		065EEAD6201F59870014C199 /* WBEventTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBEventTableViewCell.h; sourceTree = "<group>"; };
+		065EEAD7201F59870014C199 /* WBEventTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBEventTableViewCell.m; sourceTree = "<group>"; };
 		069EB9E12003A61400D4EEF7 /* WBHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeViewController.h; sourceTree = "<group>"; };
 		069EB9E22003A61400D4EEF7 /* WBHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBHomeViewController.m; sourceTree = "<group>"; };
 		069EB9E42003A6AC00D4EEF7 /* WBHomeEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeEntity.h; sourceTree = "<group>"; };
@@ -331,12 +334,14 @@
 				7985CE5E201D90040040C174 /* Business */,
 				79748963201AC55100EAAC5E /* WBEventViewController.h */,
 				79748964201AC55100EAAC5E /* WBEventViewController.m */,
-				7985CE70201D9DD70040C174 /* WBEventTableDatasource.h */,
-				7985CE71201D9DD70040C174 /* WBEventTableDatasource.m */,
 				7985CE73201D9DEA0040C174 /* WBEventTableDelegate.h */,
 				7985CE74201D9DEA0040C174 /* WBEventTableDelegate.m */,
+				7985CE70201D9DD70040C174 /* WBEventTableDatasource.h */,
+				7985CE71201D9DD70040C174 /* WBEventTableDatasource.m */,
 				7985CE6D201D9AD20040C174 /* WBEventViewController+WBEventControlCategory.h */,
 				7985CE6E201D9AD20040C174 /* WBEventViewController+WBEventControlCategory.m */,
+				7985CE7B201DA9180040C174 /* WBEventAddListViewController.h */,
+				7985CE7C201DA9180040C174 /* WBEventAddListViewController.m */,
 			);
 			name = EVENT;
 			sourceTree = "<group>";
@@ -450,8 +455,8 @@
 		7985CE76201DA7330040C174 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7985CE7B201DA9180040C174 /* WBEventAddListViewController.h */,
-				7985CE7C201DA9180040C174 /* WBEventAddListViewController.m */,
+				065EEAD6201F59870014C199 /* WBEventTableViewCell.h */,
+				065EEAD7201F59870014C199 /* WBEventTableViewCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -734,6 +739,7 @@
 				797864682019BE7000D320B7 /* WBHomeThreeCell.m in Sources */,
 				7963B86E201ECDEA00E460AF /* WBPasswordButtonView.m in Sources */,
 				06E08886201A2C0700AD5AE3 /* WBHomeViewController+WBHomeCategory.m in Sources */,
+				065EEAD8201F59870014C199 /* WBEventTableViewCell.m in Sources */,
 				7963B86B201ECB1C00E460AF /* WBPasswordViewController.m in Sources */,
 				795EA4AE2018809F0022C04B /* WBHomeOneCell.m in Sources */,
 				7985CE6C201D9A790040C174 /* JSAnimatedImagesView.m in Sources */,

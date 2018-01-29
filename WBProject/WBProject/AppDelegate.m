@@ -22,9 +22,9 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window makeKeyAndVisible];
     self.window.rootViewController = [[WBTabBarController alloc]init];
-    [WBPasswordViewController configWithWindow:self.window showRootControl:^(BOOL show) {
-        self.window.rootViewController = [[WBTabBarController alloc]init];
-    }];
+//    [WBPasswordViewController configWithWindow:self.window showRootControl:^(BOOL show) {
+//        self.window.rootViewController = [[WBTabBarController alloc]init];
+//    }];
     [self addCurrentNotification];
     return YES;
 }

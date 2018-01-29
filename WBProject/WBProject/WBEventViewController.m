@@ -33,11 +33,11 @@
     self.title = @"事件";
     self.view.backgroundColor = [UIColor whiteColor];
     self.edgesForExtendedLayout = UIRectEdgeNone;
-    
-    self.animatedImages = [[JSAnimatedImagesView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
-    [self.view addSubview:self.animatedImages];
-    self.animatedImages.delegate = self;
-    self.animatedImages.userInteractionEnabled = YES;
+//
+//    self.animatedImages = [[JSAnimatedImagesView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
+//    [self.view addSubview:self.animatedImages];
+//    self.animatedImages.delegate = self;
+//    self.animatedImages.userInteractionEnabled = YES;
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addMoreList)];
    
@@ -62,13 +62,13 @@
 - (void)viewWillAppear:(BOOL)animated
 {
      [super viewWillAppear: animated];
-     [self.animatedImages startAnimating];
+//     [self.animatedImages startAnimating];
 }
 
 - (void)viewDidDisappear:(BOOL)animated
 {
     [super viewDidDisappear:animated];
-    [self.animatedImages stopAnimating];
+//    [self.animatedImages stopAnimating];
 }
 
 - (void)loadNewData
