@@ -7,10 +7,7 @@
 //
 
 #import "WBTabBarController.h"
-#import "WBEventViewController.h"
-#import "WBAroundViewController.h"
-#import "WBCalendarViewController.h"
-#import "WBPersonalViewController.h"
+
 
 
 @interface WBTabBarController ()
@@ -23,13 +20,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self setupChildControllers];
+
+
+
 }
 
 - (void)setupChildControllers{
     
     [self setupChildNavigationControllerWithClass:[UINavigationController class] tabBarImageName:@"" tabBarSelectImageName:@"" rootViewControllerClass: [WBEventViewController class] rootViewControllerTitle:@"事件"];
     [self setupChildNavigationControllerWithClass:[UINavigationController class] tabBarImageName:@"" tabBarSelectImageName:@"" rootViewControllerClass: [WBCalendarViewController class] rootViewControllerTitle:@"日历"];
-    [self setupChildNavigationControllerWithClass:[UINavigationController class] tabBarImageName:@"" tabBarSelectImageName:@"" rootViewControllerClass: [WBAroundViewController class] rootViewControllerTitle:@"周边"];
+//    [self setupChildNavigationControllerWithClass:[UINavigationController class] tabBarImageName:@"" tabBarSelectImageName:@"" rootViewControllerClass: [WBAroundViewController class] rootViewControllerTitle:@"周边"];
     
      [self setupChildNavigationControllerWithClass:[UINavigationController class] tabBarImageName:@"" tabBarSelectImageName:@"" rootViewControllerClass: [WBPersonalViewController class] rootViewControllerTitle:@"我的"];
 
@@ -48,9 +48,10 @@
     navVc.tabBarItem.title = title;
     
     [navVc.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]} forState:UIControlStateSelected];
-    [navVc.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor grayColor],NSFontAttributeName:[UIFont systemFontOfSize:9]} forState:UIControlStateNormal];
+    [navVc.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor blackColor],NSFontAttributeName:[UIFont systemFontOfSize:9]} forState:UIControlStateNormal];
    
     [self addChildViewController:navVc];
+    [self.tabBar setBarTintColor:[UIColor colorWithRed:0.20f green:0.44f blue:0.53f alpha:1.00f]];
     
 }
 

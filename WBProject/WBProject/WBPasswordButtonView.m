@@ -16,8 +16,6 @@
 
 #define kTopHeight      150
 
-#define SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
-#define SCREEN_HEIGH  [UIScreen mainScreen].bounds.size.height
 
 
 @interface WBPasswordButtonView()<WBPasswordBusinessPresenter>

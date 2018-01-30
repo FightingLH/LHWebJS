@@ -12,6 +12,10 @@
 		069EB9E32003A61400D4EEF7 /* WBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 069EB9E22003A61400D4EEF7 /* WBHomeViewController.m */; };
 		069EB9E62003A6AC00D4EEF7 /* WBHomeEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 069EB9E52003A6AC00D4EEF7 /* WBHomeEntity.m */; };
 		06E08886201A2C0700AD5AE3 /* WBHomeViewController+WBHomeCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E08885201A2C0700AD5AE3 /* WBHomeViewController+WBHomeCategory.m */; };
+		794A57B9202022F800506E83 /* WBEventAddContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 794A57B8202022F800506E83 /* WBEventAddContentView.m */; };
+		794A57BD20204AB800506E83 /* WBEventAddSubContenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 794A57BC20204AB800506E83 /* WBEventAddSubContenView.m */; };
+		794A57C02020723E00506E83 /* WBEventAddTimeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 794A57BF2020723E00506E83 /* WBEventAddTimeView.m */; };
+		794A57C320207A6200506E83 /* WBEventAddBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 794A57C220207A6200506E83 /* WBEventAddBottomView.m */; };
 		795EA4AE2018809F0022C04B /* WBHomeOneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 795EA4AC2018809F0022C04B /* WBHomeOneCell.m */; };
 		795EA4AF2018809F0022C04B /* WBHomeOneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 795EA4AD2018809F0022C04B /* WBHomeOneCell.xib */; };
 		795F39801F789021000046B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 795F397F1F789021000046B9 /* main.m */; };
@@ -80,6 +84,16 @@
 		06E08885201A2C0700AD5AE3 /* WBHomeViewController+WBHomeCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WBHomeViewController+WBHomeCategory.m"; sourceTree = "<group>"; };
 		204E529EE6ABFC7267A84332 /* Pods_WBProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WBProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D44021E28B743987E69F576 /* Pods-WBProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WBProject/Pods-WBProject.debug.xcconfig"; sourceTree = "<group>"; };
+		794A57B220200AE700506E83 /* WBDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBDefine.h; sourceTree = "<group>"; };
+		794A57B7202022F800506E83 /* WBEventAddContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBEventAddContentView.h; sourceTree = "<group>"; };
+		794A57B8202022F800506E83 /* WBEventAddContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBEventAddContentView.m; sourceTree = "<group>"; };
+		794A57BA2020235300506E83 /* WBEventAddContentViewPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBEventAddContentViewPresenter.h; sourceTree = "<group>"; };
+		794A57BB20204AB800506E83 /* WBEventAddSubContenView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBEventAddSubContenView.h; sourceTree = "<group>"; };
+		794A57BC20204AB800506E83 /* WBEventAddSubContenView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBEventAddSubContenView.m; sourceTree = "<group>"; };
+		794A57BE2020723E00506E83 /* WBEventAddTimeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBEventAddTimeView.h; sourceTree = "<group>"; };
+		794A57BF2020723E00506E83 /* WBEventAddTimeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBEventAddTimeView.m; sourceTree = "<group>"; };
+		794A57C120207A6200506E83 /* WBEventAddBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBEventAddBottomView.h; sourceTree = "<group>"; };
+		794A57C220207A6200506E83 /* WBEventAddBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBEventAddBottomView.m; sourceTree = "<group>"; };
 		795EA4AB2018809F0022C04B /* WBHomeOneCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBHomeOneCell.h; sourceTree = "<group>"; };
 		795EA4AC2018809F0022C04B /* WBHomeOneCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBHomeOneCell.m; sourceTree = "<group>"; };
 		795EA4AD2018809F0022C04B /* WBHomeOneCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WBHomeOneCell.xib; sourceTree = "<group>"; };
@@ -221,6 +235,48 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		794A57B32020228600506E83 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				794A57B5202022B800506E83 /* eventDetailController */,
+				794A57B4202022A800506E83 /* addEventController */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		794A57B4202022A800506E83 /* addEventController */ = {
+			isa = PBXGroup;
+			children = (
+				794A57B6202022D400506E83 /* View */,
+				7985CE7B201DA9180040C174 /* WBEventAddListViewController.h */,
+				7985CE7C201DA9180040C174 /* WBEventAddListViewController.m */,
+			);
+			name = addEventController;
+			sourceTree = "<group>";
+		};
+		794A57B5202022B800506E83 /* eventDetailController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = eventDetailController;
+			sourceTree = "<group>";
+		};
+		794A57B6202022D400506E83 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				794A57BA2020235300506E83 /* WBEventAddContentViewPresenter.h */,
+				794A57B7202022F800506E83 /* WBEventAddContentView.h */,
+				794A57B8202022F800506E83 /* WBEventAddContentView.m */,
+				794A57BB20204AB800506E83 /* WBEventAddSubContenView.h */,
+				794A57BC20204AB800506E83 /* WBEventAddSubContenView.m */,
+				794A57BE2020723E00506E83 /* WBEventAddTimeView.h */,
+				794A57BF2020723E00506E83 /* WBEventAddTimeView.m */,
+				794A57C120207A6200506E83 /* WBEventAddBottomView.h */,
+				794A57C220207A6200506E83 /* WBEventAddBottomView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		795F39721F789021000046B9 = {
 			isa = PBXGroup;
 			children = (
@@ -258,6 +314,7 @@
 				7985CE7E201DAE2F0040C174 /* findWork.rtf */,
 				79748969201AC5CA00EAAC5E /* WBTabBarController.h */,
 				7974896A201AC5CA00EAAC5E /* WBTabBarController.m */,
+				794A57B220200AE700506E83 /* WBDefine.h */,
 				795F39841F789021000046B9 /* ViewController.h */,
 				795F39851F789021000046B9 /* ViewController.m */,
 				795F39871F789021000046B9 /* Main.storyboard */,
@@ -329,6 +386,7 @@
 		79748961201AC50900EAAC5E /* EVENT */ = {
 			isa = PBXGroup;
 			children = (
+				794A57B32020228600506E83 /* Controller */,
 				7985CE76201DA7330040C174 /* View */,
 				7985CE5F201D900F0040C174 /* Router */,
 				7985CE5E201D90040040C174 /* Business */,
@@ -340,8 +398,6 @@
 				7985CE71201D9DD70040C174 /* WBEventTableDatasource.m */,
 				7985CE6D201D9AD20040C174 /* WBEventViewController+WBEventControlCategory.h */,
 				7985CE6E201D9AD20040C174 /* WBEventViewController+WBEventControlCategory.m */,
-				7985CE7B201DA9180040C174 /* WBEventAddListViewController.h */,
-				7985CE7C201DA9180040C174 /* WBEventAddListViewController.m */,
 			);
 			name = EVENT;
 			sourceTree = "<group>";
@@ -656,6 +712,7 @@
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -663,6 +720,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -720,14 +778,17 @@
 				795F39861F789021000046B9 /* ViewController.m in Sources */,
 				7985CE7D201DA9180040C174 /* WBEventAddListViewController.m in Sources */,
 				7985CE62201D902E0040C174 /* WBEventBusiness.m in Sources */,
+				794A57C02020723E00506E83 /* WBEventAddTimeView.m in Sources */,
 				7991EA312016CE3D00438232 /* WBHomeBusiness.m in Sources */,
 				7985CE79201DA76E0040C174 /* WBEventRouter.m in Sources */,
 				797864642019BE2100D320B7 /* WBHomeThrHeaderView.m in Sources */,
 				795F39831F789021000046B9 /* AppDelegate.m in Sources */,
 				7991EA382016D09B00438232 /* WBHomeTableDataSource.m in Sources */,
+				794A57B9202022F800506E83 /* WBEventAddContentView.m in Sources */,
 				7985CE72201D9DD70040C174 /* WBEventTableDatasource.m in Sources */,
 				7985CE6F201D9AD20040C174 /* WBEventViewController+WBEventControlCategory.m in Sources */,
 				065A7C8B2010ECE600FB3A4F /* WBHomeOneModel.m in Sources */,
+				794A57BD20204AB800506E83 /* WBEventAddSubContenView.m in Sources */,
 				7978645B2019AB3500D320B7 /* WBHomeTwoCell.m in Sources */,
 				79748965201AC55100EAAC5E /* WBEventViewController.m in Sources */,
 				7991EA352016D08700438232 /* WBHomeTableDelegate.m in Sources */,
@@ -742,6 +803,7 @@
 				065EEAD8201F59870014C199 /* WBEventTableViewCell.m in Sources */,
 				7963B86B201ECB1C00E460AF /* WBPasswordViewController.m in Sources */,
 				795EA4AE2018809F0022C04B /* WBHomeOneCell.m in Sources */,
+				794A57C320207A6200506E83 /* WBEventAddBottomView.m in Sources */,
 				7985CE6C201D9A790040C174 /* JSAnimatedImagesView.m in Sources */,
 				7974896B201AC5CA00EAAC5E /* WBTabBarController.m in Sources */,
 			);
@@ -896,6 +958,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C78VJKGV2J;
+				GCC_PREFIX_HEADER = /Users/feeyo/WBProject/WBProject/WBProject/WBDefine.h;
 				INFOPLIST_FILE = WBProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lihuancom.WBProject;
@@ -909,6 +972,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C78VJKGV2J;
+				GCC_PREFIX_HEADER = /Users/feeyo/WBProject/WBProject/WBProject/WBDefine.h;
 				INFOPLIST_FILE = WBProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lihuancom.WBProject;

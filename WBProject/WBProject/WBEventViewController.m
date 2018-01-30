@@ -24,6 +24,8 @@
 @property  (nonatomic, strong)  WBEventTableDatasource    *tabDataSource;
 @property  (nonatomic, strong)  WBEventRouter             *router;
 @property  (nonatomic, copy)    NSArray                   *dataList;
+
+@property  (nonatomic, strong)  UIButton                  *addEventBtn;
 @end
 
 @implementation WBEventViewController
@@ -33,18 +35,22 @@
     self.title = @"事件";
     self.view.backgroundColor = [UIColor whiteColor];
     self.edgesForExtendedLayout = UIRectEdgeNone;
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:0.31f green:0.73f blue:0.88f alpha:1.00f];;
 //
 //    self.animatedImages = [[JSAnimatedImagesView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
 //    [self.view addSubview:self.animatedImages];
 //    self.animatedImages.delegate = self;
 //    self.animatedImages.userInteractionEnabled = YES;
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addMoreList)];
+//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addMoreList)];
    
     
     self.tabDelegate = [[WBEventTableDelegate alloc]init];
     self.tabDataSource = [[WBEventTableDatasource alloc]init];
     [self.view addSubview:self.tableView];
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.bottom.left.right.equalTo(self.view);
+    }];
     self.tableView.delegate = self.tabDelegate;
     self.tableView.dataSource = self.tabDataSource;
     
@@ -57,6 +63,15 @@
    
     self.router = [[WBEventRouter alloc]init];
     self.router.eventRouterDelegate = self;
+    
+    
+    [self.view addSubview:self.addEventBtn];
+    [self.addEventBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(self.view.mas_right).offset(-20);
+        make.bottom.equalTo(self.view.mas_bottom).offset(-64);
+        make.width.mas_equalTo(44);
+        make.height.mas_equalTo(44);
+    }];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -129,7 +144,7 @@
 - (UITableView *)tableView
 {
     if (!_tableView) {
-        _tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
         _tableView.backgroundView.backgroundColor = [UIColor clearColor];
         _tableView.backgroundColor = [UIColor clearColor];
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -146,5 +161,15 @@
         _dataList = @[@[@"事件"],@[@"纪念日"],@[@"会议"]];;
     }
     return _dataList;
+}
+
+- (UIButton *)addEventBtn
+{
+    if (!_addEventBtn) {
+        _addEventBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_addEventBtn setBackgroundImage:[UIImage imageNamed:@"event_add"] forState:UIControlStateNormal];
+        [_addEventBtn addTarget:self action:@selector(addMoreList) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _addEventBtn;
 }
 @end
