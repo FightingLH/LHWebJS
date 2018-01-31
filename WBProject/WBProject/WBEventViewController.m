@@ -15,7 +15,7 @@
 #import "MJRefresh.h"
 #import "WBEventRouter.h"
 
-
+#define kTextValid  getEventControllerViewModel
 @interface WBEventViewController ()<WBEventBusinessPresenter,JSAnimatedImagesViewDelegate,WBEventRouterPresenter>
 @property  (nonatomic, strong)  WBEventBusiness           *eventBusiness;
 @property  (nonatomic, strong ) JSAnimatedImagesView      *animatedImages;
@@ -72,6 +72,7 @@
         make.width.mas_equalTo(44);
         make.height.mas_equalTo(44);
     }];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -96,8 +97,9 @@
     [self.router toNextControlWithCurrentControl:self withAction:@""];
 }
 
+
 #pragma mark -service delegate
-- (void)getEventControllerViewModel:(id)model
+- (void)kTextValid:(id)model
 {
     self.tabDataSource.dataList = self.dataList;
     self.tabDelegate.dataList = self.dataList;
