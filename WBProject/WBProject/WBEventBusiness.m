@@ -8,7 +8,7 @@
 
 #import "WBEventBusiness.h"
 #import <AFNetworking/AFNetworking.h>
-
+#import <YYModel/YYModel.h>
 @implementation WBEventBusiness
 - (void)requestService
 {
@@ -25,7 +25,7 @@
     if (self.eventDelegate) {
         [self.eventDelegate getEventControllerViewModel:@""];
     }
-    
+    WBEventBusiness
 }
 
 
