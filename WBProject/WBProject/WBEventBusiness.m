@@ -25,7 +25,7 @@
     if (self.eventDelegate) {
         [self.eventDelegate getEventControllerViewModel:@""];
     }
-    WBEventBusiness
+    
 }
 
 

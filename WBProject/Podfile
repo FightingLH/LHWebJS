@@ -9,4 +9,5 @@ pod 'MJRefresh'
 pod 'IQKeyboardManager'
 pod 'BaiduMapKit'
 pod 'Masonry'
+pod 'FSTextView'
 end
